@@ -2,7 +2,6 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import {
-    Github,
     ExternalLink,
     Calendar,
     Code,
@@ -57,7 +56,6 @@ const Work = () => {
                 { icon: <Cloud className="w-4 h-4" />, text: "Kubernetes Deployment" },
                 { icon: <Zap className="w-4 h-4" />, text: "Background Processing" }
             ],
-            githubUrl: null,
             liveUrl: null,
             status: "In Development",
             impact: "Enterprise-ready EdTech solution designed to scale for thousands of concurrent learners"
@@ -140,7 +138,6 @@ const Work = () => {
                 { icon: <Cloud className="w-4 h-4" />, text: "AWS Cloud Deployment" },
                 { icon: <Code className="w-4 h-4" />, text: "Domain-Driven Design" }
             ],
-            githubUrl: null,
             liveUrl: null,
             status: "In Development",
             impact: "Enterprise-grade e-commerce platform serving high-volume traffic with optimized performance and scalable architecture"
@@ -180,7 +177,6 @@ const Work = () => {
                 { icon: <Shield className="w-4 h-4" />, text: "Best Practices Implementation" },
                 { icon: <Globe className="w-4 h-4" />, text: "Modern UI/UX Design" }
             ],
-            githubUrl: null,
             liveUrl: null,
             status: "Completed",
             impact: "Successfully modernized critical business application, improving maintainability and user experience while reducing technical debt"
@@ -219,7 +215,6 @@ const Work = () => {
                 { icon: <Shield className="w-4 h-4" />, text: "Enterprise Integration" },
                 { icon: <Database className="w-4 h-4" />, text: "Data Flow Optimization" }
             ],
-            githubUrl: null,
             liveUrl: null,
             status: "Completed",
             impact: "Successfully modernized critical enterprise integration infrastructure, reducing maintenance costs and improving system reliability"
@@ -293,17 +288,6 @@ const Work = () => {
 
                                         {/* Action Buttons */}
                                         <div className="flex gap-3 mt-4 lg:mt-0">
-                                            {project.githubUrl && (
-                                                <Button
-                                                    variant="outline"
-                                                    size="sm"
-                                                    onClick={() => window.open(project.githubUrl!, '_blank')}
-                                                    className="flex items-center gap-2 cursor-pointer"
-                                                >
-                                                    <Github className="w-4 h-4" />
-                                                    Code
-                                                </Button>
-                                            )}
                                             {project.liveUrl && (
                                                 <Button
                                                     size="sm"
