@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope } from "react-icons/fa"
-import GitHubStats from './GitHubStats'
 
 interface SocialProps {
     containerStyles?: string;
@@ -54,8 +53,6 @@ const socials = [
 const Social: React.FC<SocialProps> = ({
     containerStyles,
     iconStyles,
-    showGitHubStats = false,
-    githubUsername = 'blanho',
     layout = 'horizontal',
     showLabels = false
 }) => {
@@ -108,11 +105,6 @@ const Social: React.FC<SocialProps> = ({
                     </a>
                 ))}
             </div>
-
-            {/* GitHub Stats Display */}
-            {showGitHubStats && (
-                <GitHubStats username={githubUsername} />
-            )}
         </div>
     )
 }
