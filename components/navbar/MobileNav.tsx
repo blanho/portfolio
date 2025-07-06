@@ -1,75 +1,82 @@
 'use client'
 import React from 'react'
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import Link from "next/link"
 import { CiMenuFries } from "react-icons/ci"
 import { usePathname } from 'next/navigation'
 
 const links = [
-    { name: 'home', path: '/' },
-    { name: 'services', path: '/services' },
-    { name: 'resume', path: '/resume' },
-    { name: 'work', path: '/work' },
-    { name: 'contact', path: '/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services' },
+    { name: 'Resume', path: '/resume' },
+    { name: 'Projects', path: '/work' },
+    { name: 'Contact', path: '/contact' },
 ]
 
 const MobileNav = () => {
     const pathName = usePathname();
 
     const getTextClass = (isActive: boolean) => {
-        const baseClass = "capitalize font-medium transition-all duration-300 relative";
+        const baseClass = "block w-full text-left px-6 py-4 text-lg font-medium transition-all duration-300 relative rounded-lg";
 
         if (isActive) {
             return `${baseClass} 
-                    text-primary font-semibold
-                    dark:text-transparent dark:bg-gradient-to-r dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 
-                    dark:bg-clip-text dark:shadow-lg
-                    hover:scale-105 transform`;
+                    text-white bg-gradient-to-r from-blue-500 to-purple-600
+                    dark:from-blue-400 dark:to-purple-500 
+                    shadow-lg transform hover:scale-[1.02]`;
         } else {
             return `${baseClass} 
-                    text-slate-600 hover:text-primary hover:font-semibold
-                    dark:text-gray-300 dark:hover:text-transparent dark:hover:bg-gradient-to-r 
-                    dark:hover:from-blue-300 dark:hover:via-purple-300 dark:hover:to-pink-300 
-                    dark:hover:bg-clip-text dark:hover:drop-shadow-sm
-                    hover:scale-105 transform`;
+                    text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600
+                    dark:text-gray-300 dark:hover:text-white dark:hover:from-blue-400 dark:hover:to-purple-500
+                    hover:shadow-md hover:scale-[1.02] active:scale-95`;
         }
     };
 
     return (
         <Sheet>
-            <SheetTrigger className='flex justify-center items-center'>
-                <CiMenuFries className="text-xl 
+            <SheetTrigger className='flex justify-center items-center p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200'>
+                <CiMenuFries className="text-2xl 
                                      text-slate-600 hover:text-primary
                                      dark:text-gray-300 dark:hover:text-white
                                      transition-colors duration-300" />
             </SheetTrigger>
-            <SheetContent className='flex flex-col bg-background dark:bg-slate-900 border-border dark:border-slate-700'>
-                <nav className='flex flex-col gap-8 items-center'>
-                    {links.map((link, index) => {
-                        const isActive = link.path === pathName;
-                        return (
-                            <Link
-                                href={link.path}
-                                key={index}
-                                className={getTextClass(isActive)}
-                            >
-                                {link.name}
-                                {/* Decorative element for active state */}
-                                {isActive && (
-                                    <>
-                                        {/* Light mode underline */}
-                                        <span className="absolute -bottom-1 left-0 w-full h-0.5 
-                                                       bg-primary dark:hidden rounded-full"></span>
-                                        {/* Dark mode gradient underline */}
-                                        <span className="absolute -bottom-1 left-0 w-full h-0.5 
-                                                       bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
-                                                       hidden dark:block rounded-full"></span>
-                                    </>
-                                )}
-                            </Link>
-                        )
-                    })}
+            <SheetContent className='w-[300px] sm:w-[350px] p-0 bg-white dark:bg-slate-900 border-l border-gray-200 dark:border-slate-700'>
+                {/* Header */}
+                <SheetHeader className="px-6 py-6 border-b border-gray-200 dark:border-slate-700">
+                    <SheetTitle className="text-xl font-bold text-slate-800 dark:text-white text-left">
+                        Navigation
+                    </SheetTitle>
+                </SheetHeader>
+
+                {/* Navigation Links */}
+                <nav className='flex flex-col py-6'>
+                    <div className="space-y-2 px-3">
+                        {links.map((link, index) => {
+                            const isActive = link.path === pathName;
+                            return (
+                                <Link
+                                    href={link.path}
+                                    key={index}
+                                    className={getTextClass(isActive)}
+                                >
+                                    <span className="flex items-center">
+                                        {link.name}
+                                        {isActive && (
+                                            <span className="ml-auto w-2 h-2 bg-white rounded-full"></span>
+                                        )}
+                                    </span>
+                                </Link>
+                            )
+                        })}
+                    </div>
                 </nav>
+
+                {/* Footer */}
+                <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200 dark:border-slate-700">
+                    <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+                        © 2025 Portfolio
+                    </p>
+                </div>
             </SheetContent>
         </Sheet>
     )
