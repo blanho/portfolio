@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import { ThemeText } from '../ui/theme-text'
 import {
     Tooltip,
@@ -16,13 +18,15 @@ import {
 } from '@/constants/skills'
 
 const Skill = () => {
+    const t = useTranslations('home.skills')
+
     return (
         <TooltipProvider>
             <React.Fragment>
                 <div className="text-center xl:text-left space-y-4 xl:space-y-6">
                     <div className="relative">
                         <ThemeText variant="gradient" size="lg" weight="bold" className="mb-4">
-                            💻 Technical Expertise
+                            {t('technicalExpertise')}
                         </ThemeText>
                         <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-500 
                               rounded-full opacity-20 animate-ping"></div>
@@ -30,7 +34,7 @@ const Skill = () => {
                     <div className="space-y-3">
                         <div className="flex items-center gap-2">
                             <span className={`text-sm font-semibold ${SKILL_CATEGORIES.frontend.color}`}>
-                                {SKILL_CATEGORIES.frontend.title}
+                                {t('categories.frontend')}
                             </span>
                             <div className={`flex-1 h-px bg-gradient-to-r ${SKILL_CATEGORIES.frontend.lineGradient}`}></div>
                         </div>
@@ -48,12 +52,10 @@ const Skill = () => {
                             ))}
                         </div>
                     </div>
-
-                    {/* Backend Development */}
                     <div className="space-y-3">
                         <div className="flex items-center gap-2">
                             <span className={`text-sm font-semibold ${SKILL_CATEGORIES.backend.color}`}>
-                                {SKILL_CATEGORIES.backend.title}
+                                {t('categories.backend')}
                             </span>
                             <div className={`flex-1 h-px bg-gradient-to-r ${SKILL_CATEGORIES.backend.lineGradient}`}></div>
                         </div>
@@ -71,12 +73,10 @@ const Skill = () => {
                             ))}
                         </div>
                     </div>
-
-                    {/* Cloud & DevOps */}
                     <div className="space-y-3">
                         <div className="flex items-center gap-2">
                             <span className={`text-sm font-semibold ${SKILL_CATEGORIES.cloud.color}`}>
-                                {SKILL_CATEGORIES.cloud.title}
+                                {t('categories.cloud')}
                             </span>
                             <div className={`flex-1 h-px bg-gradient-to-r ${SKILL_CATEGORIES.cloud.lineGradient}`}></div>
                         </div>
@@ -94,12 +94,10 @@ const Skill = () => {
                             ))}
                         </div>
                     </div>
-
-                    {/* Architecture & Messaging */}
                     <div className="space-y-3">
                         <div className="flex items-center gap-2">
                             <span className={`text-sm font-semibold ${SKILL_CATEGORIES.architecture.color}`}>
-                                {SKILL_CATEGORIES.architecture.title}
+                                {t('categories.architecture')}
                             </span>
                             <div className={`flex-1 h-px bg-gradient-to-r ${SKILL_CATEGORIES.architecture.lineGradient}`}></div>
                         </div>
@@ -121,7 +119,7 @@ const Skill = () => {
                 <div className="text-center xl:text-left space-y-4 xl:space-y-5">
                     <div className="relative">
                         <ThemeText variant="gradient" size="lg" weight="bold" className="mb-2">
-                            🌐 Let&apos;s Connect
+                            {t('letsConnect')}
                         </ThemeText>
                         <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                     </div>
@@ -145,7 +143,7 @@ const Skill = () => {
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>View my GitHub profile</p>
+                                <p>{t('tooltips.github')}</p>
                             </TooltipContent>
                         </Tooltip>
 
@@ -167,7 +165,7 @@ const Skill = () => {
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>Connect on LinkedIn</p>
+                                <p>{t('tooltips.linkedin')}</p>
                             </TooltipContent>
                         </Tooltip>
 
@@ -187,7 +185,7 @@ const Skill = () => {
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>Chat on Microsoft Teams</p>
+                                <p>{t('tooltips.teams')}</p>
                             </TooltipContent>
                         </Tooltip>
 
@@ -205,7 +203,7 @@ const Skill = () => {
                                 </a>
                             </TooltipTrigger>
                             <TooltipContent>
-                                <p>Send me an email</p>
+                                <p>{t('tooltips.email')}</p>
                             </TooltipContent>
                         </Tooltip>
                     </div>
@@ -213,7 +211,7 @@ const Skill = () => {
                 <div className="text-center xl:text-left space-y-3 xl:space-y-4">
                     <div className="relative">
                         <ThemeText variant="gradient" size="lg" weight="bold" className="mb-3">
-                            🎓 Languages & Certificates & Interests
+                            {t('languagesCertificatesInterests')}
                         </ThemeText>
                     </div>
                     <div className="flex flex-wrap justify-center xl:justify-start gap-2">

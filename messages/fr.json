@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "contact": "Contact",
+    "projects": "Projets",
+    "services": "Services",
+    "resume": "CV"
+  },
+  "buttons": {
+    "hireMe": "Embauchez-moi"
+  },
+  "home": {
+    "badge": "💻 Disponible pour des opportunités",
+    "greeting": "Bonjour, je suis",
+    "name": "Ho Bao Lan",
+    "title": "Développeur Logiciel",
+    "titles": {
+      "developer": "Développeur Full Stack",
+      "engineer": "Ingénieur Logiciel"
+    },
+    "description": "3+ années d'expertise fullstack en .NET & React, architecturant des microservices évolutifs sur la plateforme cloud Azure avec une passion pour le code propre.",
+    "actions": {
+      "viewResume": "Voir le CV",
+      "downloadCV": "Télécharger le CV",
+      "contactMe": "Me contacter"
+    },
+    "stats": {
+      "years": "Années",
+      "projects": "Projets",
+      "quality": "Qualité"
+    },
+    "skills": {
+      "technicalExpertise": "💻 Expertise technique",
+      "letsConnect": "🌐 Connectons-nous",
+      "languagesCertificatesInterests": "🎓 Langues・Certificats・Intérêts",
+      "categories": {
+        "frontend": "🎨 Frontend",
+        "backend": "⚙️ Backend",
+        "cloud": "☁️ Cloud・DevOps",
+        "architecture": "🏗️ Architecture"
+      },
+      "tooltips": {
+        "github": "Voir mon profil GitHub",
+        "linkedin": "Se connecter sur LinkedIn",
+        "teams": "Chatter sur Microsoft Teams",
+        "email": "M'envoyer un email"
+      }
+    }
+  },
+  "contact": {
+    "title": "Entrer en contact",
+    "subtitle": "Prêt à collaborer ? J'aimerais avoir de vos nouvelles.",
+    "quickStats": {
+      "response": "Réponse 24h",
+      "remote": "Télétravail disponible",
+      "opportunities": "Ouvert aux opportunités"
+    },
+    "form": {
+      "title": "Envoyer un message",
+      "description": "Remplissez le formulaire ci-dessous et je vous répondrai dès que possible.",
+      "nameLabel": "Nom",
+      "namePlaceholder": "Votre nom complet",
+      "emailLabel": "Email",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "De quoi s'agit-il ?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Parlez-moi de votre projet, question, ou comment je peux vous aider...",
+      "sendButton": "Envoyer le message",
+      "required": "*"
+    },
+    "methods": {
+      "title": "Méthodes de contact",
+      "email": {
+        "title": "Email",
+        "description": "blanho1211@gmail.com",
+        "action": "Envoyer un email",
+        "available": "Toujours disponible"
+      },
+      "phone": {
+        "title": "Téléphone",
+        "description": "+84 (906) 938-322",
+        "action": "M'appeler",
+        "available": "Lun-Ven, 9h-18h"
+      },
+      "teams": {
+        "title": "Microsoft Teams",
+        "description": "Appel vidéo rapide",
+        "action": "Commencer le chat",
+        "available": "Heures de bureau"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Réseau professionnel",
+        "action": "Se connecter",
+        "available": "Demandes professionnelles"
+      }
+    },
+    "social": {
+      "title": "Connexion sociale"
+    }
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Travaux en vedette & Études de cas",
+    "status": {
+      "completed": "Terminé",
+      "inDevelopment": "En développement"
+    },
+    "keyFeatures": "Fonctionnalités clés",
+    "quickStats": {
+      "fullStack": "Développement Full-Stack",
+      "cloudArchitecture": "Architecture Cloud",
+      "enterpriseSecurity": "Sécurité d'entreprise"
+    },
+    "callToAction": {
+      "title": "Intéressé par mon travail ?",
+      "description": "Je suis toujours enthousiaste à l'idée de discuter de nouvelles opportunités et de collaborer sur des projets innovants. Construisons quelque chose d'extraordinaire ensemble !",
+      "getInTouch": "Entrer en contact",
+      "viewResume": "Voir le CV"
+    },
+    "liveDemo": "Démo en direct",
+    "skillsync": {
+      "title": "SkillSync - Plateforme EdTech",
+      "subtitle": "Système de gestion d'apprentissage évolutif",
+      "type": "Projet personnel",
+      "duration": "2024",
+      "description": "Une plateforme EdTech complète conçue pour l'apprentissage en temps réel, le suivi des compétences et les micro-certifications avec une architecture de niveau entreprise.",
+      "highlights": [
+        "Architecture microservices avec communication gRPC",
+        "Système d'apprentissage et de suivi des compétences en temps réel",
+        "Authentification multi-tenant avec IdentityServer",
+        "Génération automatique de certificats et transcodage vidéo",
+        "Moteur d'évaluation modulaire (quiz/codage/essai)",
+        "Pipeline de déploiement Docker & Kubernetes"
+      ],
+      "features": [
+        "Plateforme d'apprentissage en temps réel",
+        "Système de micro-certifications",
+        "Sécurité multi-tenant",
+        "Architecture microservices",
+        "Déploiement Kubernetes",
+        "Traitement en arrière-plan"
+      ],
+      "impact": "Solution EdTech prête pour l'entreprise conçue pour évoluer avec des milliers d'apprenants simultanés"
+    },
+    "portfolio": {
+      "title": "Site Portfolio",
+      "subtitle": "Portfolio personnel de développeur",
+      "type": "Projet personnel",
+      "duration": "2024",
+      "description": "Un site portfolio moderne et responsive présentant mes compétences, projets et expérience professionnelle.",
+      "highlights": [
+        "Design responsive moderne",
+        "Support thème sombre/clair",
+        "Internationalisation (Anglais/Japonais)",
+        "Optimisé pour les performances",
+        "Optimisé pour le SEO"
+      ],
+      "features": [
+        "Intégration Stripe Payment",
+        "Avis en temps réel avec SignalR",
+        "Sécurité ASP.NET Identity",
+        "Système de gestion d'utilisateurs",
+        "ORM Entity Framework",
+        "API Web .NET Core"
+      ],
+      "impact": "Plateforme e-commerce prête pour la production construite avec .NET Core et Next.js, avec traitement de paiement sécurisé et fonctionnalités temps réel"
+    },
+    "lms": {
+      "title": "Système de gestion d'apprentissage",
+      "subtitle": "Plateforme de formation d'entreprise",
+      "type": "Projet professionnel",
+      "duration": "2023",
+      "description": "LMS de niveau entreprise pour la formation d'entreprise avec rapports et analyses avancés.",
+      "highlights": [
+        "Architecture multi-tenant",
+        "Tableau de bord de rapports avancés",
+        "Conformité SCORM",
+        "Design responsive mobile",
+        "Intégration avec les systèmes RH"
+      ],
+      "features": [
+        "Architecture microservices",
+        "Filtrage de produits avancé",
+        "Implémentation des principes SOLID",
+        "Optimisation des performances",
+        "Déploiement cloud AWS",
+        "Conception pilotée par le domaine"
+      ],
+      "impact": "Plateforme e-commerce de niveau entreprise servant un trafic à haut volume avec des performances optimisées et une architecture évolutive"
+    },
+    "railinc": {
+      "title": "Migration Legacy Railinc - Find With Us",
+      "subtitle": "Projet de modernisation Angular 9 vers 15",
+      "type": "Projet d'équipe (8 membres) - EVIZI",
+      "duration": "Septembre 2023 - Octobre 2023",
+      "description": "Dirigé l'initiative de modernisation frontend, migrant l'application Angular 9 legacy vers Angular 15 avec des améliorations complètes UI/UX et des pratiques de développement modernes.",
+      "highlights": [
+        "Migration réussie d'Angular 9 legacy vers Angular 15",
+        "Documentation des dépendances dépréciées et des workflows de migration",
+        "Implémentation d'Angular Material 15 avec les conventions Bootstrap 5",
+        "Refactorisation du code pour répondre aux exigences modernes",
+        "Création d'une documentation de migration complète pour l'équipe",
+        "Amélioration des performances et de l'expérience utilisateur de l'application",
+        "Établissement des meilleures pratiques pour le développement futur"
+      ],
+      "features": [
+        "Modernisation de système legacy",
+        "Intégration Angular Material",
+        "Documentation complète",
+        "Améliorations de performance",
+        "Implémentation des meilleures pratiques",
+        "Design UI/UX moderne"
+      ],
+      "impact": "Modernisation réussie d'une application métier critique, améliorant la maintenabilité et l'expérience utilisateur tout en réduisant la dette technique"
+    },
+    "iibMigration": {
+      "title": "Projet de migration Railinc IIB",
+      "subtitle": "Migration IBM Integration Bus vers Spring Boot",
+      "type": "Projet d'équipe (5 membres) - EVIZI",
+      "duration": "Octobre 2023 - Novembre 2023",
+      "description": "Architecturé et exécuté la migration de l'infrastructure IBM Integration Bus legacy vers des microservices Spring Boot modernes, assurant une transformation de messages et une intégration système transparentes.",
+      "highlights": [
+        "Migration d'IBM Integration Bus legacy vers Spring Boot",
+        "Documentation des flux de messages et workflows IIB complexes",
+        "Implémentation d'Apache Camel pour le routage et la transformation de messages",
+        "Remplacement d'IBM MQ par ActiveMQ pour une meilleure évolutivité",
+        "Création de spécifications de migration complètes",
+        "Assurance d'une stratégie de migration sans interruption",
+        "Établissement de patterns de surveillance et de gestion d'erreurs"
+      ],
+      "features": [
+        "Migration de système legacy",
+        "Transformation de messages",
+        "Documentation technique",
+        "Migration sans interruption",
+        "Intégration d'entreprise",
+        "Optimisation des flux de données"
+      ],
+      "impact": "Modernisation réussie de l'infrastructure d'intégration d'entreprise critique, réduisant les coûts de maintenance et améliorant la fiabilité du système"
+    },
+    "viewProject": "Voir le projet",
+    "technologies": "Technologies utilisées",
+    "highlights": "Points forts",
+    "category": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "auth": "Auth",
+      "messaging": "Messagerie",
+      "framework": "Framework",
+      "communication": "Communication",
+      "gateway": "Passerelle",
+      "cache": "Cache",
+      "database": "Base de données",
+      "devops": "DevOps",
+      "orchestration": "Orchestration",
+      "cloud": "Cloud"
+    }
+  },
+  "services": {
+    "title": "Mes Services",
+    "subtitle": "Ce que je peux faire pour vous",
+    "webDev": {
+      "title": "Développement d'applications web",
+      "description": "Création d'applications web modernes et responsive utilisant React, Next.js et les technologies .NET.",
+      "features": [
+        "Applications à page unique (SPA)",
+        "Applications web progressives (PWA)",
+        "Design responsive & mobile-first",
+        "Fonctionnalités temps réel avec SignalR",
+        "Authentification & gestion d'utilisateurs"
+      ],
+      "popular": true
+    },
+    "integration": {
+      "title": "Intégration de systèmes",
+      "description": "Intégration transparente entre différents systèmes, API et services tiers.",
+      "features": [
+        "Intégration d'API RESTful",
+        "Connexions de services tiers",
+        "Synchronisation de données",
+        "Implémentations de webhooks",
+        "Modernisation de systèmes legacy"
+      ]
+    },
+    "migration": {
+      "title": "Migration",
+      "description": "Migration d'applications legacy vers des frameworks modernes.",
+      "features": [
+        "Migration legacy vers React",
+        "Migration & optimisation de base de données",
+        "Stratégies de migration cloud",
+        "Optimisation des performances",
+        "Amélioration de la sécurité"
+      ]
+    },
+    "cloud": {
+      "title": "Solutions cloud",
+      "description": "Architecture cloud Azure et solutions de déploiement pour applications évolutives.",
+      "features": [
+        "Déploiement Azure App Service",
+        "Orchestration de conteneurs",
+        "Configuration de pipeline CI/CD",
+        "Infrastructure as Code",
+        "Surveillance & logging"
+      ]
+    },
+    "database": {
+      "title": "Conception de base de données",
+      "description": "Conception et optimisation efficaces de base de données pour applications haute performance.",
+      "features": [
+        "Conception de schéma de base de données",
+        "Optimisation de requêtes",
+        "Modélisation de données",
+        "Réglage des performances",
+        "Stratégies de sauvegarde et récupération"
+      ]
+    },
+    "api": {
+      "title": "Développement d'API",
+      "description": "Développement d'API RESTful et GraphQL avec documentation complète.",
+      "features": [
+        "Conception d'API RESTful",
+        "Implémentation GraphQL",
+        "Documentation d'API",
+        "Authentification & autorisation",
+        "Limitation de débit & cache"
+      ]
+    },
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus",
+    "popular": "Populaire",
+    "approach": {
+      "title": "Mon approche de développement",
+      "steps": {
+        "discovery": {
+          "title": "Découverte",
+          "description": "Comprendre vos exigences et objectifs métier"
+        },
+        "planning": {
+          "title": "Planification",
+          "description": "Conception d'architecture et sélection de technologies"
+        },
+        "development": {
+          "title": "Développement",
+          "description": "Développement agile avec mises à jour régulières"
+        },
+        "delivery": {
+          "title": "Livraison",
+          "description": "Tests, déploiement et support continu"
+        }
+      }
+    }
+  },
+  "resume": {
+    "title": "Mon CV",
+    "subtitle": "Téléchargez ou consultez mon CV professionnel. Disponible en format PDF pour une consultation et impression faciles.",
+    "viewResume": "Voir le CV",
+    "downloadPDF": "Télécharger le PDF",
+    "professionalResume": "CV Professionnel",
+    "quickInfo": "Informations rapides",
+    "personalInfo": {
+      "name": "Ho Bao Lan",
+      "title": "Développeur Full-Stack",
+      "location": "Vietnam",
+      "email": "blanho1211@gmail.com",
+      "phone": "+84 (906) 938-322",
+      "website": "Site Portfolio"
+    },
+    "skills": {
+      "title": "Compétences principales",
+      "frontend": "Développement Frontend",
+      "backend": "Développement Backend",
+      "cloud": "Cloud & DevOps",
+      "database": "Gestion de base de données"
+    },
+    "experience": {
+      "title": "Expérience professionnelle",
+      "years": "3+ années d'expérience",
+      "description": "Spécialisé dans le développement full-stack avec .NET et React, axé sur les applications web évolutives et les solutions cloud."
+    },
+    "education": {
+      "title": "Formation & Certifications",
+      "degree": "Licence en Informatique",
+      "certifications": "Certifications Azure & .NET"
+    },
+    "downloadFilename": "HoBaoLan_CV.pdf",
+    "pdfViewer": {
+      "title": "Aperçu du CV",
+      "fullScreen": "Plein écran",
+      "download": "Télécharger",
+      "cannotDisplay": "Impossible d'afficher le PDF",
+      "browserIssue": "Votre navigateur ne peut pas afficher ce PDF. Veuillez essayer une des options ci-dessous :",
+      "openInNewTab": "Ouvrir dans un nouvel onglet",
+      "downloadPDF": "Télécharger le PDF"
+    },
+    "troubleshooting": {
+      "title": "Dépannage de l'affichage PDF",
+      "description": "Si vous ne pouvez pas voir le PDF ci-dessus :",
+      "solutions": [
+        "Cliquez sur \"Plein écran\" ou \"Ouvrir dans un nouvel onglet\" pour afficher dans le visualiseur PDF de votre navigateur",
+        "Utilisez le bouton \"Télécharger\" pour enregistrer et ouvrir le PDF localement",
+        "Certains navigateurs bloquent les PDF intégrés pour la sécurité - les boutons ci-dessus fonctionneront toujours",
+        "Assurez-vous que l'affichage PDF est activé dans les paramètres de votre navigateur"
+      ]
+    }
+  },
+  "footer": {
+    "createdBy": "Créé par",
+    "licenseText": "Tous droits réservés. Ce portfolio et son contenu sont la propriété intellectuelle de Ho Bao Lan. La reproduction ou distribution non autorisée est interdite.",
+    "builtWith": "Construit avec"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
+  }
+}

@@ -8,7 +8,6 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
     return (
         <AnimatePresence mode="wait">
             <div key={pathName}>
-                {/* Page content with slide and fade animation */}
                 <motion.div
                     initial={{ opacity: 0, y: 20, scale: 0.98 }}
                     animate={{
@@ -32,7 +31,6 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
                     {children}
                 </motion.div>
 
-                {/* Primary transition overlay with gradient */}
                 <motion.div
                     initial={{ scaleY: 1 }}
                     animate={{
@@ -51,7 +49,6 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
                     className='h-screen w-screen fixed bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 top-0 pointer-events-none z-50'
                 />
 
-                {/* Secondary overlay for smoother transition */}
                 <motion.div
                     initial={{ scaleY: 1 }}
                     animate={{
@@ -70,7 +67,6 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
                     className='h-screen w-screen fixed bg-gradient-to-tl from-slate-900 via-gray-800 to-slate-700 top-0 pointer-events-none z-40'
                 />
 
-                {/* Loading indicator */}
                 <motion.div
                     initial={{ opacity: 1, scale: 1 }}
                     animate={{

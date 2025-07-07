@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { useTranslations } from 'next-intl'
 import {
     Code,
     Cloud,
@@ -14,84 +15,50 @@ import {
 } from 'lucide-react'
 
 const Services = () => {
+    const t = useTranslations('services')
+
     const expertise = [
         {
             icon: <Code className="w-8 h-8" />,
-            title: "Web Application Development",
-            description: "Building modern, responsive web applications using React, Next.js, and .NET technologies.",
-            features: [
-                "Single Page Applications (SPA)",
-                "Progressive Web Apps (PWA)",
-                "Responsive design & mobile-first",
-                "Real-time features with SignalR",
-                "Authentication & user management"
-            ],
+            title: t('webDev.title'),
+            description: t('webDev.description'),
+            features: t.raw('webDev.features'),
             gradient: "from-blue-500 to-cyan-500",
-            popular: true
+            popular: t.raw('webDev.popular')
         },
         {
             icon: <Settings className="w-8 h-8" />,
-            title: "System Integration",
-            description: "Seamless integration between different systems, APIs, and third-party services.",
-            features: [
-                "RESTful API integration",
-                "Third-party service connections",
-                "Data synchronization",
-                "Webhook implementations",
-                "Legacy system modernization"
-            ],
+            title: t('integration.title'),
+            description: t('integration.description'),
+            features: t.raw('integration.features'),
             gradient: "from-purple-500 to-pink-500"
         },
         {
             icon: <Layers className="w-8 h-8" />,
-            title: "Migration",
-            description: "Migrating legacy applications to modern frameworks.",
-            features: [
-                "Legacy to React migration",
-                "Legacy IBM MQ to Active MQ migration",
-                "Performance optimization",
-                "Code modernization",
-                "UI/UX improvements"
-            ],
+            title: t('migration.title'),
+            description: t('migration.description'),
+            features: t.raw('migration.features'),
             gradient: "from-green-500 to-teal-500"
         },
         {
-            icon: <Database className="w-8 h-8" />,
-            title: "Database & Backend Solutions",
-            description: "Robust backend development with efficient database design and optimization.",
-            features: [
-                ".NET Core API development",
-                "Entity Framework implementation",
-                "Database design & optimization",
-                "Performance tuning",
-                "Data migration strategies"
-            ],
-            gradient: "from-orange-500 to-red-500"
-        },
-        {
             icon: <Cloud className="w-8 h-8" />,
-            title: "Cloud & DevOps",
-            description: "Azure cloud deployment, CI/CD pipelines, and infrastructure management.",
-            features: [
-                "Azure cloud deployment",
-                "CI/CD pipeline setup",
-                "Docker containerization",
-                "Infrastructure as Code",
-                "Monitoring & logging"
-            ],
+            title: t('cloud.title'),
+            description: t('cloud.description'),
+            features: t.raw('cloud.features'),
             gradient: "from-indigo-500 to-purple-500"
         },
         {
+            icon: <Database className="w-8 h-8" />,
+            title: t('database.title'),
+            description: t('database.description'),
+            features: t.raw('database.features'),
+            gradient: "from-orange-500 to-red-500"
+        },
+        {
             icon: <Shield className="w-8 h-8" />,
-            title: "Code Quality & Architecture",
-            description: "Clean code practices, architecture design, and technical consulting.",
-            features: [
-                "Clean architecture patterns",
-                "Code review & refactoring",
-                "Design pattern implementation",
-                "Performance optimization",
-                "Technical documentation"
-            ],
+            title: t('api.title'),
+            description: t('api.description'),
+            features: t.raw('api.features'),
             gradient: "from-gray-600 to-gray-800"
         }
     ]
@@ -113,10 +80,10 @@ const Services = () => {
                 {/* Header Section */}
                 <div className="text-center mb-16">
                     <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                        My Expertise
+                        {t('title')}
                     </h1>
                     <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-                        Specialized in web application development, system integration, and frontend migration with 3+ years of experience in modern technologies.
+                        {t('subtitle')}
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         {technologies.map((tech, index) => (
@@ -130,8 +97,6 @@ const Services = () => {
                         ))}
                     </div>
                 </div>
-
-                {/* Expertise Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {expertise.map((service, index) => (
                         <div
@@ -142,7 +107,7 @@ const Services = () => {
                             {service.popular && (
                                 <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
                                     <Star className="w-4 h-4" />
-                                    Popular
+                                    {t('popular')}
                                 </div>
                             )}
 
@@ -161,7 +126,7 @@ const Services = () => {
                                 </p>
 
                                 <ul className="space-y-2 mb-6">
-                                    {service.features.map((feature, idx) => (
+                                    {service.features.map((feature: string, idx: number) => (
                                         <li key={idx} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                                             <span>{feature}</span>
@@ -172,36 +137,34 @@ const Services = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* Process Section */}
                 <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-16">
                     <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
-                        My Development Approach
+                        {t('approach.title')}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                         {[
                             {
                                 step: "01",
-                                title: "Discovery",
-                                description: "Understanding your requirements and business goals",
+                                title: t('approach.steps.discovery.title'),
+                                description: t('approach.steps.discovery.description'),
                                 icon: <Globe className="w-6 h-6" />
                             },
                             {
                                 step: "02",
-                                title: "Planning",
-                                description: "Architecture design and technology selection",
+                                title: t('approach.steps.planning.title'),
+                                description: t('approach.steps.planning.description'),
                                 icon: <Layers className="w-6 h-6" />
                             },
                             {
                                 step: "03",
-                                title: "Development",
-                                description: "Agile development with regular updates",
+                                title: t('approach.steps.development.title'),
+                                description: t('approach.steps.development.description'),
                                 icon: <Code className="w-6 h-6" />
                             },
                             {
                                 step: "04",
-                                title: "Delivery",
-                                description: "Testing, deployment, and ongoing support",
+                                title: t('approach.steps.delivery.title'),
+                                description: t('approach.steps.delivery.description'),
                                 icon: <Zap className="w-6 h-6" />
                             }
                         ].map((process, index) => (

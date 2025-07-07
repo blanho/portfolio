@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "projects": "Projects",
+    "services": "Services",
+    "resume": "Resume"
+  },
+  "buttons": {
+    "hireMe": "Hire me"
+  },
+  "home": {
+    "badge": "💻 Available for Opportunities",
+    "greeting": "Hello, I'm",
+    "name": "Ho Bao Lan",
+    "title": "Software Developer",
+    "titles": {
+      "developer": "Full Stack Developer",
+      "engineer": "Software Engineer"
+    },
+    "description": "3+ years of fullstack expertise in .NET & React, architecting scalable microservices on Azure cloud platform with a passion for clean code.",
+    "actions": {
+      "viewResume": "View Resume",
+      "downloadCV": "Download CV",
+      "contactMe": "Contact Me"
+    },
+    "stats": {
+      "years": "Years",
+      "projects": "Projects",
+      "quality": "Quality"
+    },
+    "skills": {
+      "technicalExpertise": "💻 Technical Expertise",
+      "letsConnect": "🌐 Let's Connect",
+      "languagesCertificatesInterests": "🎓 Languages & Certificates & Interests",
+      "categories": {
+        "frontend": "🎨 Frontend",
+        "backend": "⚙️ Backend",
+        "cloud": "☁️ Cloud & DevOps",
+        "architecture": "🏗️ Architecture"
+      },
+      "tooltips": {
+        "github": "View my GitHub profile",
+        "linkedin": "Connect on LinkedIn",
+        "teams": "Chat on Microsoft Teams",
+        "email": "Send me an email"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to collaborate? I'd love to hear from you.",
+    "quickStats": {
+      "response": "24h response",
+      "remote": "Remote available",
+      "opportunities": "Open to opportunities"
+    },
+    "form": {
+      "title": "Send Message",
+      "description": "Fill out the form below and I'll get back to you as soon as possible.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project, question, or how I can help...",
+      "sendButton": "Send Message",
+      "required": "*"
+    },
+    "methods": {
+      "title": "Contact Methods",
+      "email": {
+        "title": "Email",
+        "description": "blanho1211@gmail.com",
+        "action": "Send Email",
+        "available": "Always available"
+      },
+      "phone": {
+        "title": "Phone",
+        "description": "+84 (906) 938-322",
+        "action": "Call Me",
+        "available": "Mon-Fri, 9AM-6PM"
+      },
+      "teams": {
+        "title": "Microsoft Teams",
+        "description": "Quick video call",
+        "action": "Start Chat",
+        "available": "Business hours"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Professional network",
+        "action": "Connect",
+        "available": "Professional inquiries"
+      }
+    },
+    "social": {
+      "title": "Social Connect"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Featured Work & Case Studies",
+    "status": {
+      "completed": "Completed",
+      "inDevelopment": "In Development"
+    },
+    "keyFeatures": "Key Features",
+    "quickStats": {
+      "fullStack": "Full-Stack Development",
+      "cloudArchitecture": "Cloud Architecture",
+      "enterpriseSecurity": "Enterprise Security"
+    },
+    "callToAction": {
+      "title": "Interested in My Work?",
+      "description": "I'm always excited to discuss new opportunities and collaborate on innovative projects. Let's build something amazing together!",
+      "getInTouch": "Get In Touch",
+      "viewResume": "View Resume"
+    },
+    "liveDemo": "Live Demo",
+    "skillsync": {
+      "title": "SkillSync - EdTech Platform",
+      "subtitle": "Scalable Learning Management System",
+      "type": "Personal Project",
+      "duration": "2024",
+      "description": "A comprehensive EdTech platform designed for real-time learning, skill tracking, and microcredentials with enterprise-grade architecture.",
+      "highlights": [
+        "Microservices architecture with gRPC communication",
+        "Real-time learning and skill tracking system",
+        "Multi-tenant authentication with IdentityServer",
+        "Automated certificate generation and video transcoding",
+        "Pluggable assessment engine (quiz/coding/essay)",
+        "Docker & Kubernetes deployment pipeline"
+      ],
+      "features": [
+        "Real-time Learning Platform",
+        "Microcredentials System",
+        "Multi-tenant Security",
+        "Microservices Architecture",
+        "Kubernetes Deployment",
+        "Background Processing"
+      ],
+      "impact": "Enterprise-ready EdTech solution designed to scale for thousands of concurrent learners"
+    },
+    "portfolio": {
+      "title": "Portfolio Website",
+      "subtitle": "Personal Developer Portfolio",
+      "type": "Personal Project",
+      "duration": "2024",
+      "description": "A modern, responsive portfolio website showcasing my skills, projects, and professional experience.",
+      "highlights": [
+        "Modern responsive design",
+        "Dark/light theme support",
+        "Internationalization (English/Japanese)",
+        "Performance optimized",
+        "SEO friendly"
+      ],
+      "features": [
+        "Stripe Payment Integration",
+        "Real-time Reviews with SignalR",
+        "ASP.NET Identity Security",
+        "User Management System",
+        "Entity Framework ORM",
+        ".NET Core Web API"
+      ],
+      "impact": "Production-ready e-commerce platform built with .NET Core and Next.js, featuring secure payment processing and real-time features"
+    },
+    "lms": {
+      "title": "Learning Management System",
+      "subtitle": "Corporate Training Platform",
+      "type": "Professional Project",
+      "duration": "2023",
+      "description": "Enterprise-grade LMS for corporate training with advanced reporting and analytics.",
+      "highlights": [
+        "Multi-tenant architecture",
+        "Advanced reporting dashboard",
+        "SCORM compliance",
+        "Mobile responsive design",
+        "Integration with HR systems"
+      ],
+      "features": [
+        "Microservices Architecture",
+        "Advanced Product Filtering",
+        "SOLID Principles Implementation",
+        "Performance Optimization",
+        "AWS Cloud Deployment",
+        "Domain-Driven Design"
+      ],
+      "impact": "Enterprise-grade e-commerce platform serving high-volume traffic with optimized performance and scalable architecture"
+    },
+    "railinc": {
+      "title": "Railinc Legacy Migration - Find With Us",
+      "subtitle": "Angular 9 to 15 Modernization Project",
+      "type": "Team Project (8 Members) - EVIZI",
+      "duration": "September 2023 - October 2023",
+      "description": "Led frontend modernization initiative, migrating legacy Angular 9 application to Angular 15 with comprehensive UI/UX improvements and modern development practices.",
+      "highlights": [
+        "Successfully migrated legacy Angular 9 to Angular 15",
+        "Documented deprecated dependencies and migration workflows",
+        "Implemented Angular Material 15 with Bootstrap 5 conventions",
+        "Refactored codebase to meet modern requirements",
+        "Created comprehensive migration documentation for team",
+        "Improved application performance and user experience",
+        "Established best practices for future development"
+      ],
+      "features": [
+        "Legacy System Modernization",
+        "Angular Material Integration",
+        "Comprehensive Documentation",
+        "Performance Improvements",
+        "Best Practices Implementation",
+        "Modern UI/UX Design"
+      ],
+      "impact": "Successfully modernized critical business application, improving maintainability and user experience while reducing technical debt"
+    },
+    "iibMigration": {
+      "title": "Railinc IIB Migration Project",
+      "subtitle": "IBM Integration Bus to Spring Boot Migration",
+      "type": "Team Project (5 Members) - EVIZI",
+      "duration": "October 2023 - November 2023",
+      "description": "Architected and executed migration of legacy IBM Integration Bus infrastructure to modern Spring Boot microservices, ensuring seamless message transformation and system integration.",
+      "highlights": [
+        "Migrated legacy IBM Integration Bus to Spring Boot",
+        "Documented complex IIB message flows and workflows",
+        "Implemented Apache Camel for message routing and transformation",
+        "Replaced IBM MQ with ActiveMQ for better scalability",
+        "Created comprehensive migration specifications",
+        "Ensured zero-downtime migration strategy",
+        "Established monitoring and error handling patterns"
+      ],
+      "features": [
+        "Legacy System Migration",
+        "Message Transformation",
+        "Technical Documentation",
+        "Zero-Downtime Migration",
+        "Enterprise Integration",
+        "Data Flow Optimization"
+      ],
+      "impact": "Successfully modernized critical enterprise integration infrastructure, reducing maintenance costs and improving system reliability"
+    },
+    "viewProject": "View Project",
+    "technologies": "Technologies Used",
+    "highlights": "Key Highlights",
+    "category": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "auth": "Auth",
+      "messaging": "Messaging",
+      "framework": "Framework",
+      "communication": "Communication",
+      "gateway": "Gateway",
+      "cache": "Cache",
+      "database": "Database",
+      "devops": "DevOps",
+      "orchestration": "Orchestration",
+      "cloud": "Cloud"
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "What I Can Do For You",
+    "webDev": {
+      "title": "Web Application Development",
+      "description": "Building modern, responsive web applications using React, Next.js, and .NET technologies.",
+      "features": [
+        "Single Page Applications (SPA)",
+        "Progressive Web Apps (PWA)",
+        "Responsive design & mobile-first",
+        "Real-time features with SignalR",
+        "Authentication & user management"
+      ],
+      "popular": true
+    },
+    "integration": {
+      "title": "System Integration",
+      "description": "Seamless integration between different systems, APIs, and third-party services.",
+      "features": [
+        "RESTful API integration",
+        "Third-party service connections",
+        "Data synchronization",
+        "Webhook implementations",
+        "Legacy system modernization"
+      ]
+    },
+    "migration": {
+      "title": "Migration",
+      "description": "Migrating legacy applications to modern frameworks.",
+      "features": [
+        "Legacy to React migration",
+        "Database migration & optimization",
+        "Cloud migration strategies",
+        "Performance optimization",
+        "Security enhancement"
+      ]
+    },
+    "cloud": {
+      "title": "Cloud Solutions",
+      "description": "Azure cloud architecture and deployment solutions for scalable applications.",
+      "features": [
+        "Azure App Service deployment",
+        "Container orchestration",
+        "CI/CD pipeline setup",
+        "Infrastructure as Code",
+        "Monitoring & logging"
+      ]
+    },
+    "database": {
+      "title": "Database Design",
+      "description": "Efficient database design and optimization for high-performance applications.",
+      "features": [
+        "Database schema design",
+        "Query optimization",
+        "Data modeling",
+        "Performance tuning",
+        "Backup & recovery strategies"
+      ]
+    },
+    "api": {
+      "title": "API Development",
+      "description": "RESTful and GraphQL API development with comprehensive documentation.",
+      "features": [
+        "RESTful API design",
+        "GraphQL implementation",
+        "API documentation",
+        "Authentication & authorization",
+        "Rate limiting & caching"
+      ]
+    },
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "popular": "Popular",
+    "approach": {
+      "title": "My Development Approach",
+      "steps": {
+        "discovery": {
+          "title": "Discovery",
+          "description": "Understanding your requirements and business goals"
+        },
+        "planning": {
+          "title": "Planning",
+          "description": "Architecture design and technology selection"
+        },
+        "development": {
+          "title": "Development",
+          "description": "Agile development with regular updates"
+        },
+        "delivery": {
+          "title": "Delivery",
+          "description": "Testing, deployment, and ongoing support"
+        }
+      }
+    }
+  },
+  "resume": {
+    "title": "My Resume",
+    "subtitle": "Download or view my professional resume. Available in PDF format for easy viewing and printing.",
+    "viewResume": "View Resume",
+    "downloadPDF": "Download PDF",
+    "professionalResume": "Professional Resume",
+    "quickInfo": "Quick Information",
+    "personalInfo": {
+      "name": "Ho Bao Lan",
+      "title": "Full-Stack Developer",
+      "location": "Vietnam",
+      "email": "blanho1211@gmail.com",
+      "phone": "+84 (906) 938-322",
+      "website": "Portfolio Website"
+    },
+    "skills": {
+      "title": "Core Skills",
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "cloud": "Cloud & DevOps",
+      "database": "Database Management"
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "years": "3+ Years Experience",
+      "description": "Specialized in full-stack development with .NET and React, focusing on scalable web applications and cloud solutions."
+    },
+    "education": {
+      "title": "Education & Certifications",
+      "degree": "Bachelor's Degree in Computer Science",
+      "certifications": "Azure & .NET Certifications"
+    },
+    "downloadFilename": "HoBaoLan_Resume.pdf",
+    "pdfViewer": {
+      "title": "Resume Preview",
+      "fullScreen": "Full Screen",
+      "download": "Download",
+      "cannotDisplay": "Cannot Display PDF",
+      "browserIssue": "Your browser cannot display this PDF. Please try one of the options below:",
+      "openInNewTab": "Open in New Tab",
+      "downloadPDF": "Download PDF"
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting PDF Display",
+      "description": "If you can't see the PDF above:",
+      "solutions": [
+        "Click \"Full Screen\" or \"Open in New Tab\" to view in your browser's PDF viewer",
+        "Use the \"Download\" button to save and open the PDF locally",
+        "Some browsers block embedded PDFs for security - the buttons above will always work",
+        "Make sure your browser has PDF viewing enabled in settings"
+      ]
+    }
+  },
+  "footer": {
+    "createdBy": "Created by",
+    "licenseText": "All rights reserved. This portfolio and its contents are the intellectual property of Ho Bao Lan. Unauthorized reproduction or distribution is prohibited.",
+    "builtWith": "Built with"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}

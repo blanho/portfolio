@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "contact": "お問い合わせ",
+    "projects": "プロジェクト",
+    "services": "サービス",
+    "resume": "履歴書"
+  },
+  "buttons": {
+    "hireMe": "お仕事のご依頼"
+  },
+  "home": {
+    "badge": "💻 お仕事承ります",
+    "greeting": "こんにちは、私は",
+    "name": "ホー・バオ・ラン",
+    "title": "ソフトウェア開発者",
+    "titles": {
+      "developer": "フルスタック開発者",
+      "engineer": "ソフトウェアエンジニア"
+    },
+    "description": ".NETとReactでの3年以上のフルスタック経験を持ち、Azureクラウドプラットフォーム上でスケーラブルなマイクロサービスを設計し、クリーンコードに情熱を注いでいます。",
+    "actions": {
+      "viewResume": "履歴書を見る",
+      "downloadCV": "CVをダウンロード",
+      "contactMe": "お問い合わせ"
+    },
+    "stats": {
+      "years": "年間",
+      "projects": "プロジェクト",
+      "quality": "品質"
+    },
+    "skills": {
+      "technicalExpertise": "💻 技術的専門知識",
+      "letsConnect": "🌐 つながりましょう",
+      "languagesCertificatesInterests": "🎓 言語・資格・興味",
+      "categories": {
+        "frontend": "🎨 フロントエンド",
+        "backend": "⚙️ バックエンド",
+        "cloud": "☁️ クラウド・DevOps",
+        "architecture": "🏗️ アーキテクチャ"
+      },
+      "tooltips": {
+        "github": "GitHubプロフィールを見る",
+        "linkedin": "LinkedInで接続",
+        "teams": "Microsoft Teamsでチャット",
+        "email": "メールを送る"
+      }
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "コラボレーションの準備はできていますか？ぜひお聞かせください。",
+    "quickStats": {
+      "response": "24時間以内に返信",
+      "remote": "リモート対応可能",
+      "opportunities": "お仕事承ります"
+    },
+    "form": {
+      "title": "メッセージを送信",
+      "description": "以下のフォームにご記入いただければ、できるだけ早くご返信いたします。",
+      "nameLabel": "お名前",
+      "namePlaceholder": "お名前をご記入ください",
+      "emailLabel": "メールアドレス",
+      "emailPlaceholder": "メールアドレス@example.com",
+      "subjectLabel": "件名",
+      "subjectPlaceholder": "どのような件でしょうか？",
+      "messageLabel": "メッセージ",
+      "messagePlaceholder": "プロジェクトについて、ご質問、またはどのようにお手伝いできるかお聞かせください...",
+      "sendButton": "メッセージを送信",
+      "required": "*"
+    },
+    "methods": {
+      "title": "連絡方法",
+      "email": {
+        "title": "メール",
+        "description": "blanho1211@gmail.com",
+        "action": "メール送信",
+        "available": "いつでも対応"
+      },
+      "phone": {
+        "title": "電話",
+        "description": "+84 (906) 938-322",
+        "action": "電話をかける",
+        "available": "月-金, 9AM-6PM"
+      },
+      "teams": {
+        "title": "Microsoft Teams",
+        "description": "クイックビデオ通話",
+        "action": "チャット開始",
+        "available": "営業時間中"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "プロフェッショナルネットワーク",
+        "action": "つながる",
+        "available": "ビジネスお問い合わせ"
+      }
+    },
+    "social": {
+      "title": "ソーシャル"
+    }
+  },
+  "projects": {
+    "title": "私のプロジェクト",
+    "subtitle": "注目作品・ケーススタディ",
+    "status": {
+      "completed": "完了",
+      "inDevelopment": "開発中"
+    },
+    "keyFeatures": "主な機能",
+    "quickStats": {
+      "fullStack": "フルスタック開発",
+      "cloudArchitecture": "クラウドアーキテクチャ",
+      "enterpriseSecurity": "エンタープライズセキュリティ"
+    },
+    "callToAction": {
+      "title": "私の作品に興味はありますか？",
+      "description": "革新的なプロジェクトについて議論し、協力することに常に興奮しています。一緒に素晴らしいものを作りましょう！",
+      "getInTouch": "お問い合わせ",
+      "viewResume": "履歴書を見る"
+    },
+    "liveDemo": "ライブデモ",
+    "skillsync": {
+      "title": "SkillSync - 教育プラットフォーム",
+      "subtitle": "スケーラブル学習管理システム",
+      "type": "個人プロジェクト",
+      "duration": "2024年",
+      "description": "リアルタイム学習、スキル追跡、マイクロクレデンシャルを備えた包括的な教育プラットフォーム。エンタープライズグレードのアーキテクチャ設計。",
+      "highlights": [
+        "gRPC通信を使用したマイクロサービスアーキテクチャ",
+        "リアルタイム学習・スキル追跡システム",
+        "IdentityServerによるマルチテナント認証",
+        "自動証明書生成・動画トランスコーディング",
+        "プラガブル評価エンジン（クイズ/コーディング/エッセイ）",
+        "Docker & Kubernetesデプロイメントパイプライン"
+      ],
+      "features": [
+        "リアルタイム学習プラットフォーム",
+        "マイクロクレデンシャルシステム",
+        "マルチテナントセキュリティ",
+        "マイクロサービスアーキテクチャ",
+        "Kubernetesデプロイメント",
+        "バックグラウンド処理"
+      ],
+      "impact": "数千人の同時学習者に対応するスケーラブルなエンタープライズレディ教育ソリューション"
+    },
+    "portfolio": {
+      "title": "ポートフォリオウェブサイト",
+      "subtitle": "個人開発者ポートフォリオ",
+      "type": "個人プロジェクト",
+      "duration": "2024年",
+      "description": "私のスキル、プロジェクト、職歴を紹介するモダンでレスポンシブなポートフォリオウェブサイト。",
+      "highlights": [
+        "モダンレスポンシブデザイン",
+        "ダーク/ライトテーマサポート",
+        "国際化対応（日本語/英語）",
+        "パフォーマンス最適化",
+        "SEO対応"
+      ],
+      "features": [
+        "Stripe決済統合",
+        "SignalRによるリアルタイムレビュー",
+        "ASP.NET Identityセキュリティ",
+        "ユーザー管理システム",
+        "Entity Framework ORM",
+        ".NET Core Web API"
+      ],
+      "impact": ".NET CoreとNext.jsで構築された本格運用可能なECプラットフォーム。安全な決済処理とリアルタイム機能を搭載"
+    },
+    "lms": {
+      "title": "学習管理システム",
+      "subtitle": "企業トレーニングプラットフォーム",
+      "type": "業務プロジェクト",
+      "duration": "2023年",
+      "description": "高度なレポートと分析機能を備えた企業トレーニング用エンタープライズグレードLMS。",
+      "highlights": [
+        "マルチテナントアーキテクチャ",
+        "高度なレポートダッシュボード",
+        "SCORM準拠",
+        "モバイル対応デザイン",
+        "HRシステムとの統合"
+      ],
+      "features": [
+        "マイクロサービスアーキテクチャ",
+        "高度な商品フィルタリング",
+        "SOLID原則実装",
+        "パフォーマンス最適化",
+        "AWSクラウドデプロイメント",
+        "ドメイン駆動設計"
+      ],
+      "impact": "最適化されたパフォーマンスとスケーラブルなアーキテクチャで大量トラフィックに対応するエンタープライズグレードECプラットフォーム"
+    },
+    "railinc": {
+      "title": "Railinc レガシー移行 - Find With Us",
+      "subtitle": "Angular 9から15への現代化プロジェクト",
+      "type": "チームプロジェクト（8名）- EVIZI",
+      "duration": "2023年9月 - 2023年10月",
+      "description": "レガシーAngular 9アプリケーションをAngular 15に移行するフロントエンド現代化イニシアチブを主導し、包括的なUI/UX改善とモダン開発プラクティスを実装。",
+      "highlights": [
+        "レガシーAngular 9からAngular 15への移行を成功",
+        "非推奨依存関係と移行ワークフローを文書化",
+        "Bootstrap 5規約でAngular Material 15を実装",
+        "モダン要件に合わせてコードベースをリファクタリング",
+        "チーム向け包括的移行ドキュメントを作成",
+        "アプリケーションパフォーマンスとユーザー体験を改善",
+        "今後の開発のベストプラクティスを確立"
+      ],
+      "features": [
+        "レガシーシステム現代化",
+        "Angular Material統合",
+        "包括的ドキュメント",
+        "パフォーマンス改善",
+        "ベストプラクティス実装",
+        "モダンUI/UXデザイン"
+      ],
+      "impact": "重要なビジネスアプリケーションを成功的に現代化し、保守性とユーザー体験を向上させながら技術的負債を削減"
+    },
+    "iibMigration": {
+      "title": "Railinc IIB移行プロジェクト",
+      "subtitle": "IBM Integration BusからSpring Bootへの移行",
+      "type": "チームプロジェクト（5名）- EVIZI",
+      "duration": "2023年10月 - 2023年11月",
+      "description": "レガシーIBM Integration Busインフラストラクチャのモダンな Spring Boot マイクロサービスへの移行を設計・実行し、シームレスなメッセージ変換とシステム統合を確保。",
+      "highlights": [
+        "レガシーIBM Integration BusをSpring Bootに移行",
+        "複雑なIIBメッセージフローとワークフローを文書化",
+        "メッセージルーティングと変換にApache Camelを実装",
+        "スケーラビリティ向上のためIBM MQをActiveMQに置換",
+        "包括的移行仕様書を作成",
+        "ゼロダウンタイム移行戦略を確保",
+        "監視とエラーハンドリングパターンを確立"
+      ],
+      "features": [
+        "レガシーシステム移行",
+        "メッセージ変換",
+        "技術文書作成",
+        "ゼロダウンタイム移行",
+        "エンタープライズ統合",
+        "データフロー最適化"
+      ],
+      "impact": "重要なエンタープライズ統合インフラストラクチャを成功的に現代化し、保守コストを削減してシステム信頼性を向上"
+    },
+    "viewProject": "プロジェクトを見る",
+    "technologies": "使用技術",
+    "highlights": "主な特徴",
+    "category": {
+      "backend": "バックエンド",
+      "frontend": "フロントエンド",
+      "auth": "認証",
+      "messaging": "メッセージング",
+      "framework": "フレームワーク",
+      "communication": "通信",
+      "gateway": "ゲートウェイ",
+      "cache": "キャッシュ",
+      "database": "データベース",
+      "devops": "DevOps",
+      "orchestration": "オーケストレーション",
+      "cloud": "クラウド"
+    }
+  },
+  "services": {
+    "title": "私のサービス",
+    "subtitle": "あなたのためにできること",
+    "webDev": {
+      "title": "ウェブアプリケーション開発",
+      "description": "React、Next.js、.NET技術を使用したモダンでレスポンシブなウェブアプリケーションの構築。",
+      "features": [
+        "シングルページアプリケーション（SPA）",
+        "プログレッシブウェブアプリ（PWA）",
+        "レスポンシブデザイン・モバイルファースト",
+        "SignalRを使用したリアルタイム機能",
+        "認証・ユーザー管理"
+      ],
+      "popular": true
+    },
+    "integration": {
+      "title": "システム統合",
+      "description": "異なるシステム、API、サードパーティサービス間のシームレスな統合。",
+      "features": [
+        "RESTful API統合",
+        "サードパーティサービス接続",
+        "データ同期",
+        "Webhook実装",
+        "レガシーシステムの現代化"
+      ]
+    },
+    "migration": {
+      "title": "マイグレーション",
+      "description": "レガシーアプリケーションのモダンフレームワークへの移行。",
+      "features": [
+        "レガシーからReactへの移行",
+        "データベース移行・最適化",
+        "クラウド移行戦略",
+        "パフォーマンス最適化",
+        "セキュリティ強化"
+      ]
+    },
+    "cloud": {
+      "title": "クラウドソリューション",
+      "description": "スケーラブルなアプリケーションのためのAzureクラウドアーキテクチャとデプロイメントソリューション。",
+      "features": [
+        "Azure App Serviceデプロイメント",
+        "コンテナオーケストレーション",
+        "CI/CDパイプライン設定",
+        "Infrastructure as Code",
+        "監視・ログ"
+      ]
+    },
+    "database": {
+      "title": "データベース設計",
+      "description": "高性能アプリケーションのための効率的なデータベース設計と最適化。",
+      "features": [
+        "データベーススキーマ設計",
+        "クエリ最適化",
+        "データモデリング",
+        "パフォーマンスチューニング",
+        "バックアップ・リカバリ戦略"
+      ]
+    },
+    "api": {
+      "title": "API開発",
+      "description": "包括的なドキュメントを含むRESTfulおよびGraphQL API開発。",
+      "features": [
+        "RESTful API設計",
+        "GraphQL実装",
+        "APIドキュメント",
+        "認証・認可",
+        "レート制限・キャッシング"
+      ]
+    },
+    "getStarted": "始める",
+    "learnMore": "詳しく見る",
+    "popular": "人気",
+    "approach": {
+      "title": "私の開発アプローチ",
+      "steps": {
+        "discovery": {
+          "title": "発見",
+          "description": "要件とビジネス目標の理解"
+        },
+        "planning": {
+          "title": "計画",
+          "description": "アーキテクチャ設計と技術選択"
+        },
+        "development": {
+          "title": "開発",
+          "description": "定期的な更新を伴うアジャイル開発"
+        },
+        "delivery": {
+          "title": "配信",
+          "description": "テスト、デプロイメント、継続的サポート"
+        }
+      }
+    }
+  },
+  "resume": {
+    "title": "私の履歴書",
+    "subtitle": "私の職歴をダウンロードまたは閲覧してください。印刷や閲覧に便利なPDF形式で提供しています。",
+    "viewResume": "履歴書を見る",
+    "downloadPDF": "PDFをダウンロード",
+    "professionalResume": "職歴書",
+    "quickInfo": "基本情報",
+    "personalInfo": {
+      "name": "ホー・バオ・ラン",
+      "title": "フルスタック開発者",
+      "location": "ベトナム",
+      "email": "blanho1211@gmail.com",
+      "phone": "+84 (906) 938-322",
+      "website": "ポートフォリオウェブサイト"
+    },
+    "skills": {
+      "title": "コアスキル",
+      "frontend": "フロントエンド開発",
+      "backend": "バックエンド開発",
+      "cloud": "クラウド・DevOps",
+      "database": "データベース管理"
+    },
+    "experience": {
+      "title": "職歴",
+      "years": "3年以上の経験",
+      "description": ".NETとReactを使用したフルスタック開発に特化し、スケーラブルなウェブアプリケーションとクラウドソリューションに注力。"
+    },
+    "education": {
+      "title": "学歴・資格",
+      "degree": "コンピュータサイエンス学士号",
+      "certifications": "Azure・.NET資格"
+    },
+    "downloadFilename": "ホーバオラン_履歴書.pdf",
+    "pdfViewer": {
+      "title": "履歴書プレビュー",
+      "fullScreen": "フルスクリーン",
+      "download": "ダウンロード",
+      "cannotDisplay": "PDFを表示できません",
+      "browserIssue": "お使いのブラウザでこのPDFを表示できません。以下のオプションをお試しください：",
+      "openInNewTab": "新しいタブで開く",
+      "downloadPDF": "PDFをダウンロード"
+    },
+    "troubleshooting": {
+      "title": "PDF表示のトラブルシューティング",
+      "description": "上記のPDFが表示されない場合：",
+      "solutions": [
+        "「フルスクリーン」または「新しいタブで開く」をクリックしてブラウザのPDFビューアで表示",
+        "「ダウンロード」ボタンを使用してPDFを保存し、ローカルで開く",
+        "一部のブラウザはセキュリティ上の理由で埋め込みPDFをブロックします - 上記のボタンは常に動作します",
+        "ブラウザの設定でPDF表示が有効になっていることを確認してください"
+      ]
+    }
+  },
+  "footer": {
+    "createdBy": "作成者",
+    "licenseText": "全著作権所有。このポートフォリオとその内容は、Ho Bao Lanの知的財産です。無断複製または配布は禁止されています。",
+    "builtWith": "技術スタック"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功"
+  }
+}

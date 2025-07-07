@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
 import { Button } from '@/components/ui/button'
+import { useTranslations, useLocale } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import {
     ExternalLink,
     Calendar,
@@ -18,146 +20,141 @@ import {
     Globe
 } from 'lucide-react'
 
+interface Feature {
+    icon: React.ReactNode
+    text: string
+}
+
 const Work = () => {
+    const t = useTranslations('projects')
+    const locale = useLocale()
+    const pathname = usePathname()
+
+    const getCurrentLocale = () => {
+        const pathLocale = pathname.split('/')[1];
+        return pathLocale && ['en', 'ja', 'zh', 'fr', 'vi'].includes(pathLocale) ? pathLocale : locale || 'en';
+    };
+
+    const currentLocale = getCurrentLocale();
+
     const projects = [
         {
             id: 1,
-            title: "SkillSync - EdTech Platform",
-            subtitle: "Scalable Learning Management System",
-            type: "Personal Project",
-            duration: "2024",
-            description: "A comprehensive EdTech platform designed for real-time learning, skill tracking, and microcredentials with enterprise-grade architecture.",
-            highlights: [
-                "Microservices architecture with gRPC communication",
-                "Real-time learning and skill tracking system",
-                "Multi-tenant authentication with IdentityServer",
-                "Automated certificate generation and video transcoding",
-                "Pluggable assessment engine (quiz/coding/essay)",
-                "Docker & Kubernetes deployment pipeline"
-            ],
+            title: t('skillsync.title'),
+            subtitle: t('skillsync.subtitle'),
+            type: t('skillsync.type'),
+            duration: t('skillsync.duration'),
+            description: t('skillsync.description'),
+            highlights: t.raw('skillsync.highlights'),
             technologies: [
-                { name: ".NET 8", color: "bg-purple-500", category: "Backend" },
-                { name: "Next.js", color: "bg-black", category: "Frontend" },
-                { name: "IdentityServer", color: "bg-blue-600", category: "Auth" },
-                { name: "RabbitMQ", color: "bg-orange-500", category: "Messaging" },
-                { name: "MassTransit", color: "bg-green-600", category: "Framework" },
-                { name: "gRPC", color: "bg-indigo-500", category: "Communication" },
-                { name: "YARP Gateway", color: "bg-cyan-500", category: "Gateway" },
-                { name: "Redis", color: "bg-red-500", category: "Cache" },
-                { name: "SQL Server", color: "bg-blue-700", category: "Database" },
-                { name: "Docker", color: "bg-blue-400", category: "DevOps" },
-                { name: "Kubernetes", color: "bg-blue-800", category: "Orchestration" }
+                { name: ".NET 8", color: "bg-purple-500", category: t('category.backend') },
+                { name: "Next.js", color: "bg-black", category: t('category.frontend') },
+                { name: "IdentityServer", color: "bg-blue-600", category: t('category.auth') },
+                { name: "RabbitMQ", color: "bg-orange-500", category: t('category.messaging') },
+                { name: "MassTransit", color: "bg-green-600", category: t('category.framework') },
+                { name: "gRPC", color: "bg-indigo-500", category: t('category.communication') },
+                { name: "YARP Gateway", color: "bg-cyan-500", category: t('category.gateway') },
+                { name: "Redis", color: "bg-red-500", category: t('category.cache') },
+                { name: "SQL Server", color: "bg-blue-700", category: t('category.database') },
+                { name: "Docker", color: "bg-blue-400", category: t('category.devops') },
+                { name: "Kubernetes", color: "bg-blue-800", category: t('category.orchestration') }
             ],
-            features: [
-                { icon: <BookOpen className="w-4 h-4" />, text: "Real-time Learning Platform" },
-                { icon: <Award className="w-4 h-4" />, text: "Microcredentials System" },
-                { icon: <Shield className="w-4 h-4" />, text: "Multi-tenant Security" },
-                { icon: <Server className="w-4 h-4" />, text: "Microservices Architecture" },
-                { icon: <Cloud className="w-4 h-4" />, text: "Kubernetes Deployment" },
-                { icon: <Zap className="w-4 h-4" />, text: "Background Processing" }
-            ],
+            features: t.raw('skillsync.features').map((text: string, index: number) => ({
+                icon: [
+                    <BookOpen key={`skillsync-icon-${index}-0`} className="w-4 h-4" />,
+                    <Award key={`skillsync-icon-${index}-1`} className="w-4 h-4" />,
+                    <Shield key={`skillsync-icon-${index}-2`} className="w-4 h-4" />,
+                    <Server key={`skillsync-icon-${index}-3`} className="w-4 h-4" />,
+                    <Cloud key={`skillsync-icon-${index}-4`} className="w-4 h-4" />,
+                    <Zap key={`skillsync-icon-${index}-5`} className="w-4 h-4" />
+                ][index],
+                text
+            })),
             liveUrl: null,
             status: "In Development",
-            impact: "Enterprise-ready EdTech solution designed to scale for thousands of concurrent learners"
+            impact: t('skillsync.impact')
         },
         {
             id: 2,
-            title: "Shop App - E-commerce Platform",
-            subtitle: "Full-Stack E-commerce Solution",
-            type: "Open Source Project",
-            duration: "2023",
-            description: "A modern e-commerce web application built with .NET Core and Next.js, featuring real-time interactions, secure payment processing, and comprehensive user management systems.",
-            highlights: [
-                "Full-stack e-commerce solution with .NET Core Web API",
-                "Secure payment processing with Stripe integration",
-                "Real-time user interactions and reviews with SignalR",
-                "Advanced security measures (CSRF/XSS protection)",
-                "JWT-based authentication with Identity framework",
-                "Interactive product review system with real-time updates"
-            ],
+            title: t('portfolio.title'),
+            subtitle: t('portfolio.subtitle'),
+            type: t('portfolio.type'),
+            duration: t('portfolio.duration'),
+            description: t('portfolio.description'),
+            highlights: t.raw('portfolio.highlights'),
             technologies: [
-                { name: ".NET Core", color: "bg-purple-600", category: "Backend" },
-                { name: "Next.js", color: "bg-black", category: "Frontend" },
+                { name: ".NET Core", color: "bg-purple-600", category: t('category.backend') },
+                { name: "Next.js", color: "bg-black", category: t('category.frontend') },
                 { name: "Entity Framework", color: "bg-blue-600", category: "ORM" },
-                { name: "SQL Server", color: "bg-blue-700", category: "Database" },
+                { name: "SQL Server", color: "bg-blue-700", category: t('category.database') },
                 { name: "SignalR", color: "bg-green-600", category: "Real-time" },
                 { name: "Stripe", color: "bg-indigo-600", category: "Payment" },
-                { name: "ASP.NET Identity", color: "bg-purple-500", category: "Authentication" },
-                { name: "TypeScript", color: "bg-blue-500", category: "Frontend" },
+                { name: "ASP.NET Identity", color: "bg-purple-500", category: t('category.auth') },
+                { name: "TypeScript", color: "bg-blue-500", category: t('category.frontend') },
                 { name: "Tailwind CSS", color: "bg-cyan-500", category: "Styling" }
             ],
-            features: [
-                { icon: <CreditCard className="w-4 h-4" />, text: "Stripe Payment Integration" },
-                { icon: <MessageCircle className="w-4 h-4" />, text: "Real-time Reviews with SignalR" },
-                { icon: <Shield className="w-4 h-4" />, text: "ASP.NET Identity Security" },
-                { icon: <Users className="w-4 h-4" />, text: "User Management System" },
-                { icon: <Database className="w-4 h-4" />, text: "Entity Framework ORM" },
-                { icon: <Globe className="w-4 h-4" />, text: ".NET Core Web API" }
-            ],
+            features: t.raw('portfolio.features').map((text: string, index: number) => ({
+                icon: [
+                    <CreditCard key={`portfolio-icon-${index}-0`} className="w-4 h-4" />,
+                    <MessageCircle key={`portfolio-icon-${index}-1`} className="w-4 h-4" />,
+                    <Shield key={`portfolio-icon-${index}-2`} className="w-4 h-4" />,
+                    <Users key={`portfolio-icon-${index}-3`} className="w-4 h-4" />,
+                    <Database key={`portfolio-icon-${index}-4`} className="w-4 h-4" />,
+                    <Globe key={`portfolio-icon-${index}-5`} className="w-4 h-4" />
+                ][index],
+                text
+            })),
             liveUrl: null,
             status: "Completed",
-            impact: "Production-ready e-commerce platform built with .NET Core and Next.js, featuring secure payment processing and real-time features"
+            impact: t('portfolio.impact')
         },
         {
             id: 3,
-            title: "Eshop - Enterprise E-commerce Platform",
-            subtitle: "Microservices-based E-commerce Solution",
-            type: "Team Project (10 Members)",
-            duration: "April 2023 - September 2023",
-            description: "Led development of a scalable enterprise e-commerce platform using .NET microservices architecture with Next.js frontend, implementing advanced filtering systems and database optimization strategies.",
-            highlights: [
-                "Designed and implemented comprehensive database architecture with Entity Framework",
-                "Built RESTful APIs with .NET Core and Next.js integration",
-                "Implemented strategy pattern for advanced product filtering",
-                "Optimized database performance and resolved N+1 query issues",
-                "Established CI/CD pipeline with comprehensive testing using xUnit",
-                "Conducted code reviews enforcing SOLID principles",
-                "Mentored team members on .NET and Next.js best practices"
-            ],
+            title: t('lms.title'),
+            subtitle: t('lms.subtitle'),
+            type: t('lms.type'),
+            duration: t('lms.duration'),
+            description: t('lms.description'),
+            highlights: t.raw('lms.highlights'),
             technologies: [
-                { name: ".NET Core", color: "bg-purple-600", category: "Backend" },
-                { name: "Next.js", color: "bg-black", category: "Frontend" },
+                { name: ".NET Core", color: "bg-purple-600", category: t('category.backend') },
+                { name: "Next.js", color: "bg-black", category: t('category.frontend') },
                 { name: "Entity Framework", color: "bg-blue-600", category: "ORM" },
-                { name: "SQL Server", color: "bg-blue-700", category: "Database" },
+                { name: "SQL Server", color: "bg-blue-700", category: t('category.database') },
                 { name: "SignalR", color: "bg-green-600", category: "Real-time" },
-                { name: "MassTransit", color: "bg-green-600", category: "Messaging" },
+                { name: "MassTransit", color: "bg-green-600", category: t('category.messaging') },
                 { name: "RabbitMQ", color: "bg-orange-500", category: "Message Broker" },
                 { name: "Terraform", color: "bg-purple-600", category: "IaC" },
                 { name: "Azure DevOps", color: "bg-blue-800", category: "CI/CD" },
-                { name: "Azure", color: "bg-blue-500", category: "Cloud" },
+                { name: "Azure", color: "bg-blue-500", category: t('category.cloud') },
                 { name: "ElasticSearch", color: "bg-yellow-600", category: "Search" },
                 { name: "SonarQube", color: "bg-blue-600", category: "Quality" },
-                { name: "Docker", color: "bg-blue-400", category: "DevOps" },
-                { name: "Kubernetes", color: "bg-blue-800", category: "Orchestration" }
+                { name: "Docker", color: "bg-blue-400", category: t('category.devops') },
+                { name: "Kubernetes", color: "bg-blue-800", category: t('category.orchestration') }
             ],
-            features: [
-                { icon: <Server className="w-4 h-4" />, text: "Microservices Architecture" },
-                { icon: <Database className="w-4 h-4" />, text: "Advanced Product Filtering" },
-                { icon: <Shield className="w-4 h-4" />, text: "SOLID Principles Implementation" },
-                { icon: <Zap className="w-4 h-4" />, text: "Performance Optimization" },
-                { icon: <Cloud className="w-4 h-4" />, text: "AWS Cloud Deployment" },
-                { icon: <Code className="w-4 h-4" />, text: "Domain-Driven Design" }
-            ],
+            features: t.raw('lms.features').map((text: string, index: number) => ({
+                icon: [
+                    <Server key={`lms-icon-${index}-0`} className="w-4 h-4" />,
+                    <Database key={`lms-icon-${index}-1`} className="w-4 h-4" />,
+                    <Shield key={`lms-icon-${index}-2`} className="w-4 h-4" />,
+                    <Zap key={`lms-icon-${index}-3`} className="w-4 h-4" />,
+                    <Cloud key={`lms-icon-${index}-4`} className="w-4 h-4" />,
+                    <Code key={`lms-icon-${index}-5`} className="w-4 h-4" />
+                ][index],
+                text
+            })),
             liveUrl: null,
             status: "In Development",
-            impact: "Enterprise-grade e-commerce platform serving high-volume traffic with optimized performance and scalable architecture"
+            impact: t('lms.impact')
         },
         {
             id: 4,
-            title: "Railinc Legacy Migration - Find With Us",
-            subtitle: "Angular 9 to 15 Modernization Project",
-            type: "Team Project (8 Members) - EVIZI",
-            duration: "September 2023 - October 2023",
-            description: "Led frontend modernization initiative, migrating legacy Angular 9 application to Angular 15 with comprehensive UI/UX improvements and modern development practices.",
-            highlights: [
-                "Successfully migrated legacy Angular 9 to Angular 15",
-                "Documented deprecated dependencies and migration workflows",
-                "Implemented Angular Material 15 with Bootstrap 5 conventions",
-                "Refactored codebase to meet modern requirements",
-                "Created comprehensive migration documentation for team",
-                "Improved application performance and user experience",
-                "Established best practices for future development"
-            ],
+            title: t('railinc.title'),
+            subtitle: t('railinc.subtitle'),
+            type: t('railinc.type'),
+            duration: t('railinc.duration'),
+            description: t('railinc.description'),
+            highlights: t.raw('railinc.highlights'),
             technologies: [
                 { name: "Angular 15", color: "bg-red-500", category: "Frontend" },
                 { name: "Angular Material", color: "bg-indigo-600", category: "UI Framework" },
@@ -169,34 +166,29 @@ const Work = () => {
                 { name: "AWS", color: "bg-orange-500", category: "Cloud" },
                 { name: "RESTful APIs", color: "bg-blue-600", category: "API" }
             ],
-            features: [
-                { icon: <Code className="w-4 h-4" />, text: "Legacy System Modernization" },
-                { icon: <Users className="w-4 h-4" />, text: "Angular Material Integration" },
-                { icon: <BookOpen className="w-4 h-4" />, text: "Comprehensive Documentation" },
-                { icon: <Zap className="w-4 h-4" />, text: "Performance Improvements" },
-                { icon: <Shield className="w-4 h-4" />, text: "Best Practices Implementation" },
-                { icon: <Globe className="w-4 h-4" />, text: "Modern UI/UX Design" }
-            ],
+            features: t.raw('railinc.features').map((text: string, index: number) => ({
+                icon: [
+                    <Code key={`railinc-icon-${index}-0`} className="w-4 h-4" />,
+                    <Users key={`railinc-icon-${index}-1`} className="w-4 h-4" />,
+                    <BookOpen key={`railinc-icon-${index}-2`} className="w-4 h-4" />,
+                    <Zap key={`railinc-icon-${index}-3`} className="w-4 h-4" />,
+                    <Shield key={`railinc-icon-${index}-4`} className="w-4 h-4" />,
+                    <Globe key={`railinc-icon-${index}-5`} className="w-4 h-4" />
+                ][index],
+                text
+            })),
             liveUrl: null,
             status: "Completed",
-            impact: "Successfully modernized critical business application, improving maintainability and user experience while reducing technical debt"
+            impact: t('railinc.impact')
         },
         {
             id: 5,
-            title: "Railinc IIB Migration Project",
-            subtitle: "IBM Integration Bus to Spring Boot Migration",
-            type: "Team Project (5 Members) - EVIZI",
-            duration: "October 2023 - November 2023",
-            description: "Architected and executed migration of legacy IBM Integration Bus infrastructure to modern Spring Boot microservices, ensuring seamless message transformation and system integration.",
-            highlights: [
-                "Migrated legacy IBM Integration Bus to Spring Boot",
-                "Documented complex IIB message flows and workflows",
-                "Implemented Apache Camel for message routing and transformation",
-                "Replaced IBM MQ with ActiveMQ for better scalability",
-                "Created comprehensive migration specifications",
-                "Ensured zero-downtime migration strategy",
-                "Established monitoring and error handling patterns"
-            ],
+            title: t('iibMigration.title'),
+            subtitle: t('iibMigration.subtitle'),
+            type: t('iibMigration.type'),
+            duration: t('iibMigration.duration'),
+            description: t('iibMigration.description'),
+            highlights: t.raw('iibMigration.highlights'),
             technologies: [
                 { name: "Spring Boot", color: "bg-green-700", category: "Backend" },
                 { name: "Apache Camel", color: "bg-red-600", category: "Integration" },
@@ -207,17 +199,20 @@ const Work = () => {
                 { name: "JMS", color: "bg-orange-600", category: "Messaging API" },
                 { name: "Java", color: "bg-orange-700", category: "Programming" }
             ],
-            features: [
-                { icon: <Server className="w-4 h-4" />, text: "Legacy System Migration" },
-                { icon: <MessageCircle className="w-4 h-4" />, text: "Message Transformation" },
-                { icon: <BookOpen className="w-4 h-4" />, text: "Technical Documentation" },
-                { icon: <Zap className="w-4 h-4" />, text: "Zero-Downtime Migration" },
-                { icon: <Shield className="w-4 h-4" />, text: "Enterprise Integration" },
-                { icon: <Database className="w-4 h-4" />, text: "Data Flow Optimization" }
-            ],
+            features: t.raw('iibMigration.features').map((text: string, index: number) => ({
+                icon: [
+                    <Server key={`iib-icon-${index}-0`} className="w-4 h-4" />,
+                    <MessageCircle key={`iib-icon-${index}-1`} className="w-4 h-4" />,
+                    <BookOpen key={`iib-icon-${index}-2`} className="w-4 h-4" />,
+                    <Zap key={`iib-icon-${index}-3`} className="w-4 h-4" />,
+                    <Shield key={`iib-icon-${index}-4`} className="w-4 h-4" />,
+                    <Database key={`iib-icon-${index}-5`} className="w-4 h-4" />
+                ][index],
+                text
+            })),
             liveUrl: null,
             status: "Completed",
-            impact: "Successfully modernized critical enterprise integration infrastructure, reducing maintenance costs and improving system reliability"
+            impact: t('iibMigration.impact')
         }
     ]
 
@@ -225,33 +220,29 @@ const Work = () => {
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-x-hidden">
             <div className="container mx-auto px-4 py-8 lg:py-12 max-w-full">
                 <div className="w-full max-w-7xl mx-auto">
-                    {/* Header Section */}
                     <div className="text-center mb-8 lg:mb-12">
                         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-                            Featured Projects
+                            {t('title')}
                         </h1>
                         <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6">
-                            Showcasing enterprise-grade applications built with modern technologies and best practices
+                            {t('subtitle')}
                         </p>
-
-                        {/* Quick Stats */}
                         <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
                             <div className="flex items-center gap-2">
                                 <Code className="w-4 h-4 text-blue-500" />
-                                <span>Full-Stack Development</span>
+                                <span>{t('quickStats.fullStack')}</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Cloud className="w-4 h-4 text-green-500" />
-                                <span>Cloud Architecture</span>
+                                <span>{t('quickStats.cloudArchitecture')}</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Shield className="w-4 h-4 text-purple-500" />
-                                <span>Enterprise Security</span>
+                                <span>{t('quickStats.enterpriseSecurity')}</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Projects Grid */}
                     <div className="space-y-8 lg:space-y-12">
                         {projects.map((project, index) => (
                             <div
@@ -260,7 +251,6 @@ const Work = () => {
                                     }`}
                             >
                                 <div className="p-6 lg:p-8">
-                                    {/* Project Header */}
                                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                                         <div className="flex-1">
                                             <div className="flex items-center gap-3 mb-2">
@@ -268,7 +258,7 @@ const Work = () => {
                                                     ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
                                                     : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
                                                     }`}>
-                                                    {project.status}
+                                                    {project.status === 'Completed' ? t('status.completed') : t('status.inDevelopment')}
                                                 </span>
                                                 <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-medium rounded-full">
                                                     {project.type}
@@ -285,8 +275,6 @@ const Work = () => {
                                                 <span>{project.duration}</span>
                                             </div>
                                         </div>
-
-                                        {/* Action Buttons */}
                                         <div className="flex gap-3 mt-4 lg:mt-0">
                                             {project.liveUrl && (
                                                 <Button
@@ -295,31 +283,26 @@ const Work = () => {
                                                     className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 cursor-pointer"
                                                 >
                                                     <ExternalLink className="w-4 h-4" />
-                                                    Live Demo
+                                                    {t('liveDemo')}
                                                 </Button>
                                             )}
                                         </div>
                                     </div>
-
-                                    {/* Description */}
                                     <p className="text-gray-600 dark:text-gray-300 text-base lg:text-lg mb-6 leading-relaxed">
                                         {project.description}
                                     </p>
-
-                                    {/* Impact Statement */}
                                     <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 mb-6 rounded-r-lg">
                                         <p className="text-blue-800 dark:text-blue-200 font-medium">
                                             💡 {project.impact}
                                         </p>
                                     </div>
 
-                                    {/* Key Features */}
                                     <div className="mb-6">
                                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                                            🚀 Key Features
+                                            🚀 {t('keyFeatures')}
                                         </h4>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                            {project.features.map((feature, idx) => (
+                                            {project.features.map((feature: Feature, idx: number) => (
                                                 <div key={idx} className="flex items-center gap-3 text-gray-600 dark:text-gray-300">
                                                     <div className="text-blue-500">
                                                         {feature.icon}
@@ -330,13 +313,12 @@ const Work = () => {
                                         </div>
                                     </div>
 
-                                    {/* Technical Highlights */}
                                     <div className="mb-6">
                                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                                            ⭐ Technical Highlights
+                                            ⭐ {t('highlights')}
                                         </h4>
                                         <ul className="space-y-2">
-                                            {project.highlights.map((highlight, idx) => (
+                                            {project.highlights.map((highlight: string, idx: number) => (
                                                 <li key={idx} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
                                                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                                                     <span className="text-sm">{highlight}</span>
@@ -345,10 +327,9 @@ const Work = () => {
                                         </ul>
                                     </div>
 
-                                    {/* Technology Stack */}
                                     <div>
                                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                                            🛠️ Technology Stack
+                                            🛠️ {t('technologies')}
                                         </h4>
                                         <div className="flex flex-wrap gap-2">
                                             {project.technologies.map((tech, idx) => (
@@ -365,34 +346,31 @@ const Work = () => {
                             </div>
                         ))}
                     </div>
-
-                    {/* Call to Action */}
                     <div className="text-center mt-12 lg:mt-16">
                         <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
                             <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-                                Interested in My Work?
+                                {t('callToAction.title')}
                             </h3>
                             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-                                I&apos;m always excited to discuss new opportunities and collaborate on innovative projects.
-                                Let&apos;s build something amazing together!
+                                {t('callToAction.description')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button
                                     size="lg"
                                     variant="secondary"
-                                    onClick={() => window.location.href = '/contact'}
+                                    onClick={() => window.location.href = `/${currentLocale}/contact`}
                                     className="bg-white text-blue-600 hover:bg-gray-100 cursor-pointer"
                                 >
                                     <MessageCircle className="w-5 h-5 mr-2" />
-                                    Get In Touch
+                                    {t('callToAction.getInTouch')}
                                 </Button>
                                 <Button
                                     size="lg"
-                                    onClick={() => window.location.href = '/resume'}
+                                    onClick={() => window.location.href = `/${currentLocale}/resume`}
                                     className="bg-purple-600 hover:bg-purple-700 text-white border-purple-600 cursor-pointer"
                                 >
                                     <Award className="w-5 h-5 mr-2" />
-                                    View Resume
+                                    {t('callToAction.viewResume')}
                                 </Button>
                             </div>
                         </div>

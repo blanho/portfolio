@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -16,6 +17,7 @@ import {
 } from 'lucide-react'
 
 const Contact = () => {
+    const t = useTranslations('contact')
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -32,7 +34,6 @@ const Contact = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
-        // Create mailto link with form data
         const mailtoLink = `mailto:blanho1211@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
             `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
         )}`
@@ -42,39 +43,39 @@ const Contact = () => {
     const contactMethods = [
         {
             icon: <Mail className="w-6 h-6" />,
-            title: "Email",
-            description: "blanho1211@gmail.com",
-            action: "Send Email",
+            title: t('methods.email.title'),
+            description: t('methods.email.description'),
+            action: t('methods.email.action'),
             link: "mailto:blanho1211@gmail.com",
             color: "from-blue-500 to-blue-700",
-            available: "Always available"
+            available: t('methods.email.available')
         },
         {
             icon: <Phone className="w-6 h-6" />,
-            title: "Phone",
-            description: "+84 (906) 938-322",
-            action: "Call Me",
+            title: t('methods.phone.title'),
+            description: t('methods.phone.description'),
+            action: t('methods.phone.action'),
             link: "tel:+84906938322",
             color: "from-green-500 to-green-700",
-            available: "Mon-Fri, 9AM-6PM"
+            available: t('methods.phone.available')
         },
         {
             icon: <MessageCircle className="w-6 h-6" />,
-            title: "Microsoft Teams",
-            description: "Quick video call",
-            action: "Start Chat",
+            title: t('methods.teams.title'),
+            description: t('methods.teams.description'),
+            action: t('methods.teams.action'),
             link: "https://teams.microsoft.com/l/chat/0/0?users=h.baolan20025@gmail.com",
             color: "from-purple-500 to-purple-700",
-            available: "Business hours"
+            available: t('methods.teams.available')
         },
         {
             icon: <Linkedin className="w-6 h-6" />,
-            title: "LinkedIn",
-            description: "Professional network",
-            action: "Connect",
+            title: t('methods.linkedin.title'),
+            description: t('methods.linkedin.description'),
+            action: t('methods.linkedin.action'),
             link: "https://linkedin.com/in/blanho",
             color: "from-blue-600 to-blue-800",
-            available: "Professional inquiries"
+            available: t('methods.linkedin.available')
         }
     ]
 
@@ -97,28 +98,26 @@ const Contact = () => {
         <div className="h-screen overflow-hidden lg:overflow-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
             <div className="h-full overflow-y-auto lg:overflow-visible lg:py-8 overflow-x-hidden">
                 <div className="container mx-auto px-4 py-6 lg:py-0 max-w-full">
-                    {/* Header Section - Compact */}
                     <div className="text-center mb-6 lg:mb-8">
                         <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-                            Get In Touch
+                            {t('title')}
                         </h1>
                         <p className="text-base lg:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-4">
-                            Ready to collaborate? I&apos;d love to hear from you.
+                            {t('subtitle')}
                         </p>
 
-                        {/* Quick Stats - Compact */}
                         <div className="flex flex-wrap justify-center gap-3 lg:gap-6 text-xs lg:text-sm text-gray-600 dark:text-gray-400">
                             <div className="flex items-center gap-1">
                                 <Clock className="w-3 h-3 lg:w-4 lg:h-4 text-green-500" />
-                                <span>24h response</span>
+                                <span>{t('quickStats.response')}</span>
                             </div>
                             <div className="flex items-center gap-1">
                                 <Globe className="w-3 h-3 lg:w-4 lg:h-4 text-blue-500" />
-                                <span>Remote available</span>
+                                <span>{t('quickStats.remote')}</span>
                             </div>
                             <div className="flex items-center gap-1">
                                 <Calendar className="w-3 h-3 lg:w-4 lg:h-4 text-purple-500" />
-                                <span>Open to opportunities</span>
+                                <span>{t('quickStats.opportunities')}</span>
                             </div>
                         </div>
                     </div>
@@ -127,10 +126,10 @@ const Contact = () => {
                         <div className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 lg:p-6 lg:overflow-y-auto">
                             <div className="mb-4 lg:mb-6">
                                 <h2 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Send Message
+                                    {t('form.title')}
                                 </h2>
                                 <p className="text-sm text-gray-600 dark:text-gray-300">
-                                    Fill out the form below and I&apos;ll get back to you as soon as possible.
+                                    {t('form.description')}
                                 </p>
                             </div>
 
@@ -138,7 +137,7 @@ const Contact = () => {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                                            Name *
+                                            {t('form.nameLabel')} {t('form.required')}
                                         </label>
                                         <Input
                                             type="text"
@@ -146,13 +145,13 @@ const Contact = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             required
-                                            placeholder="Your full name"
+                                            placeholder={t('form.namePlaceholder')}
                                             className="w-full h-9"
                                         />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                                            Email *
+                                            {t('form.emailLabel')} {t('form.required')}
                                         </label>
                                         <Input
                                             type="email"
@@ -160,7 +159,7 @@ const Contact = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             required
-                                            placeholder="your.email@example.com"
+                                            placeholder={t('form.emailPlaceholder')}
                                             className="w-full h-9"
                                         />
                                     </div>
@@ -168,7 +167,7 @@ const Contact = () => {
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                                        Subject *
+                                        {t('form.subjectLabel')} {t('form.required')}
                                     </label>
                                     <Input
                                         type="text"
@@ -176,21 +175,21 @@ const Contact = () => {
                                         value={formData.subject}
                                         onChange={handleChange}
                                         required
-                                        placeholder="What's this about?"
+                                        placeholder={t('form.subjectPlaceholder')}
                                         className="w-full h-9"
                                     />
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                                        Message *
+                                        {t('form.messageLabel')} {t('form.required')}
                                     </label>
                                     <Textarea
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
                                         required
-                                        placeholder="Tell me about your project, question, or how I can help..."
+                                        placeholder={t('form.messagePlaceholder')}
                                         rows={4}
                                         className="w-full resize-none"
                                     />
@@ -201,7 +200,7 @@ const Contact = () => {
                                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 cursor-pointer"
                                 >
                                     <Send className="w-4 h-4 mr-2" />
-                                    Send Message
+                                    {t('form.sendButton')}
                                 </Button>
                             </form>
 
@@ -210,7 +209,7 @@ const Contact = () => {
                         <div className="space-y-4 lg:overflow-y-auto">
                             <div>
                                 <h2 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                                    Contact Methods
+                                    {t('methods.title')}
                                 </h2>
 
                                 <div className="space-y-3">
@@ -249,7 +248,7 @@ const Contact = () => {
 
                             <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md">
                                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-3">
-                                    Social Connect
+                                    {t('social.title')}
                                 </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {socialLinks.map((social, index) => (

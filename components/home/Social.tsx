@@ -69,7 +69,6 @@ const Social: React.FC<SocialProps> = ({
 
     return (
         <div className="space-y-4">
-            {/* Beautiful Social Icons */}
             <div className={`${getLayoutClasses()} ${containerStyles}`}>
                 {socials.map((social) => (
                     <a
@@ -86,13 +85,11 @@ const Social: React.FC<SocialProps> = ({
                             {social.icon}
                         </div>
 
-                        {/* Status Badge */}
                         {social.badge && (
                             <div className={`absolute -top-2 -right-2 w-4 h-4 ${social.badge} rounded-full 
                                           border-2 border-white dark:border-gray-800 ${social.animate}`}></div>
                         )}
 
-                        {/* Label (if enabled) */}
                         {showLabels && (
                             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 
                                           opacity-0 group-hover:opacity-100 transition-opacity duration-300">

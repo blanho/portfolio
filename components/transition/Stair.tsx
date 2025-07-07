@@ -31,7 +31,6 @@ const Stair = () => {
                              dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-900
                              border-r border-slate-200 dark:border-slate-700"
                 >
-                    {/* Animated gradient overlay */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{
@@ -49,7 +48,6 @@ const Stair = () => {
                                  dark:from-blue-400/30 dark:via-purple-400/30 dark:to-pink-400/30"
                     />
 
-                    {/* Shimmer effect */}
                     <motion.div
                         initial={{ x: "-100%", opacity: 0 }}
                         animate={{ x: "100%", opacity: [0, 1, 0] }}

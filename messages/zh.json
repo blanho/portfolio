@@ -1,0 +1,419 @@
+{
+  "nav": {
+    "home": "首页",
+    "contact": "联系我",
+    "projects": "项目",
+    "services": "服务",
+    "resume": "简历"
+  },
+  "buttons": {
+    "hireMe": "雇佣我"
+  },
+  "home": {
+    "badge": "💻 寻求工作机会",
+    "greeting": "您好，我是",
+    "name": "Ho Bao Lan",
+    "title": "软件开发工程师",
+    "titles": {
+      "developer": "全栈开发工程师",
+      "engineer": "软件工程师"
+    },
+    "description": "3年以上全栈开发经验，专精.NET和React，在Azure云平台上构建可扩展的微服务架构，热衷于编写整洁的代码。",
+    "actions": {
+      "viewResume": "查看简历",
+      "downloadCV": "下载简历",
+      "contactMe": "联系我"
+    },
+    "stats": {
+      "years": "年经验",
+      "projects": "项目",
+      "quality": "质量"
+    },
+    "skills": {
+      "technicalExpertise": "💻 技术专长",
+      "letsConnect": "🌐 让我们联系",
+      "languagesCertificatesInterests": "🎓 语言・证书・兴趣",
+      "categories": {
+        "frontend": "🎨 前端",
+        "backend": "⚙️ 后端",
+        "cloud": "☁️ 云计算・DevOps",
+        "architecture": "🏗️ 架构"
+      },
+      "tooltips": {
+        "github": "查看我的GitHub档案",
+        "linkedin": "在LinkedIn上连接",
+        "teams": "在Microsoft Teams上聊天",
+        "email": "发送邮件给我"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "准备好合作了吗？我很乐意听取您的想法。",
+    "quickStats": {
+      "response": "24小时回复",
+      "remote": "支持远程",
+      "opportunities": "开放机会"
+    },
+    "form": {
+      "title": "发送消息",
+      "description": "请填写下面的表格，我会尽快回复您。",
+      "nameLabel": "姓名",
+      "namePlaceholder": "您的全名",
+      "emailLabel": "邮箱",
+      "emailPlaceholder": "您的邮箱@example.com",
+      "subjectLabel": "主题",
+      "subjectPlaceholder": "关于什么？",
+      "messageLabel": "消息",
+      "messagePlaceholder": "告诉我您的项目、问题或我能如何帮助您...",
+      "sendButton": "发送消息",
+      "required": "*"
+    },
+    "methods": {
+      "title": "联系方式",
+      "email": {
+        "title": "邮箱",
+        "description": "blanho1211@gmail.com",
+        "action": "发送邮件",
+        "available": "随时可用"
+      },
+      "phone": {
+        "title": "电话",
+        "description": "+84 (906) 938-322",
+        "action": "拨打电话",
+        "available": "周一至周五，9AM-6PM"
+      },
+      "teams": {
+        "title": "Microsoft Teams",
+        "description": "快速视频通话",
+        "action": "开始聊天",
+        "available": "工作时间"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "专业网络",
+        "action": "连接",
+        "available": "专业咨询"
+      }
+    },
+    "social": {
+      "title": "社交媒体"
+    }
+  },
+  "projects": {
+    "title": "我的项目",
+    "subtitle": "精选作品和案例研究",
+    "status": {
+      "completed": "已完成",
+      "inDevelopment": "开发中"
+    },
+    "keyFeatures": "核心功能",
+    "quickStats": {
+      "fullStack": "全栈开发",
+      "cloudArchitecture": "云架构",
+      "enterpriseSecurity": "企业安全"
+    },
+    "callToAction": {
+      "title": "对我的作品感兴趣？",
+      "description": "我总是很兴奋地讨论新机会并在创新项目上合作。让我们一起建造一些令人惊叹的东西！",
+      "getInTouch": "联系我",
+      "viewResume": "查看简历"
+    },
+    "liveDemo": "在线演示",
+    "skillsync": {
+      "title": "SkillSync - 教育科技平台",
+      "subtitle": "可扩展的学习管理系统",
+      "type": "个人项目",
+      "duration": "2024",
+      "description": "一个综合的教育科技平台，专为实时学习、技能追踪和微证书而设计，具有企业级架构。",
+      "highlights": [
+        "微服务架构与gRPC通信",
+        "实时学习和技能追踪系统",
+        "多租户身份验证与IdentityServer",
+        "自动证书生成和视频转码",
+        "可插拔的评估引擎（测验/编码/文章）",
+        "Docker & Kubernetes部署管道"
+      ],
+      "features": [
+        "实时学习平台",
+        "微证书系统",
+        "多租户安全",
+        "微服务架构",
+        "Kubernetes部署",
+        "后台处理"
+      ],
+      "impact": "企业级教育科技解决方案，旨在为数千名并发学习者提供扩展"
+    },
+    "portfolio": {
+      "title": "个人作品集网站",
+      "subtitle": "个人开发者作品集",
+      "type": "个人项目",
+      "duration": "2024",
+      "description": "一个现代的、响应式的作品集网站，展示我的技能、项目和专业经验。",
+      "highlights": [
+        "现代响应式设计",
+        "深色/浅色主题支持",
+        "国际化（英语/日语）",
+        "性能优化",
+        "SEO友好"
+      ],
+      "features": [
+        "Stripe支付集成",
+        "SignalR实时评论",
+        "ASP.NET身份安全",
+        "用户管理系统",
+        "Entity Framework ORM",
+        ".NET Core Web API"
+      ],
+      "impact": "使用.NET Core和Next.js构建的生产就绪的电子商务平台，具有安全的支付处理和实时功能"
+    },
+    "lms": {
+      "title": "学习管理系统",
+      "subtitle": "企业培训平台",
+      "type": "专业项目",
+      "duration": "2023",
+      "description": "企业级LMS，用于企业培训，具有高级报告和分析功能。",
+      "highlights": [
+        "多租户架构",
+        "高级报告仪表板",
+        "SCORM合规性",
+        "移动响应式设计",
+        "与HR系统集成"
+      ],
+      "features": [
+        "微服务架构",
+        "高级产品过滤",
+        "SOLID原则实现",
+        "性能优化",
+        "AWS云部署",
+        "领域驱动设计"
+      ],
+      "impact": "服务于高流量的企业级电子商务平台，具有优化的性能和可扩展的架构"
+    },
+    "railinc": {
+      "title": "Railinc遗留系统迁移 - Find With Us",
+      "subtitle": "Angular 9到15现代化项目",
+      "type": "团队项目（8名成员）- EVIZI",
+      "duration": "2023年9月 - 2023年10月",
+      "description": "领导前端现代化倡议，将遗留的Angular 9应用程序迁移到Angular 15，并进行全面的UI/UX改进和现代开发实践。",
+      "highlights": [
+        "成功将遗留Angular 9迁移到Angular 15",
+        "记录了弃用的依赖项和迁移工作流程",
+        "实现了Angular Material 15与Bootstrap 5约定",
+        "重构代码库以满足现代要求",
+        "为团队创建了全面的迁移文档",
+        "提高了应用程序性能和用户体验",
+        "建立了未来开发的最佳实践"
+      ],
+      "features": [
+        "遗留系统现代化",
+        "Angular Material集成",
+        "全面文档",
+        "性能改进",
+        "最佳实践实施",
+        "现代UI/UX设计"
+      ],
+      "impact": "成功现代化了关键业务应用程序，提高了可维护性和用户体验，同时减少了技术债务"
+    },
+    "iibMigration": {
+      "title": "Railinc IIB迁移项目",
+      "subtitle": "IBM集成总线到Spring Boot迁移",
+      "type": "团队项目（5名成员）- EVIZI",
+      "duration": "2023年10月 - 2023年11月",
+      "description": "架构和执行遗留IBM集成总线基础设施到现代Spring Boot微服务的迁移，确保无缝消息转换和系统集成。",
+      "highlights": [
+        "将遗留IBM集成总线迁移到Spring Boot",
+        "记录了复杂的IIB消息流和工作流程",
+        "实现了Apache Camel用于消息路由和转换",
+        "将IBM MQ替换为ActiveMQ以提高可扩展性",
+        "创建了全面的迁移规范",
+        "确保了零停机迁移策略",
+        "建立了监控和错误处理模式"
+      ],
+      "features": [
+        "遗留系统迁移",
+        "消息转换",
+        "技术文档",
+        "零停机迁移",
+        "企业集成",
+        "数据流优化"
+      ],
+      "impact": "成功现代化了关键的企业集成基础设施，降低了维护成本并提高了系统可靠性"
+    },
+    "viewProject": "查看项目",
+    "technologies": "使用的技术",
+    "highlights": "核心亮点",
+    "category": {
+      "backend": "后端",
+      "frontend": "前端",
+      "auth": "认证",
+      "messaging": "消息传递",
+      "framework": "框架",
+      "communication": "通信",
+      "gateway": "网关",
+      "cache": "缓存",
+      "database": "数据库",
+      "devops": "DevOps",
+      "orchestration": "编排",
+      "cloud": "云"
+    }
+  },
+  "services": {
+    "title": "我的服务",
+    "subtitle": "我能为您做什么",
+    "webDev": {
+      "title": "Web应用程序开发",
+      "description": "使用React、Next.js和.NET技术构建现代的响应式Web应用程序。",
+      "features": [
+        "单页应用程序（SPA）",
+        "渐进式Web应用程序（PWA）",
+        "响应式设计和移动优先",
+        "使用SignalR的实时功能",
+        "身份验证和用户管理"
+      ],
+      "popular": true
+    },
+    "integration": {
+      "title": "系统集成",
+      "description": "不同系统、API和第三方服务之间的无缝集成。",
+      "features": [
+        "RESTful API集成",
+        "第三方服务连接",
+        "数据同步",
+        "Webhook实现",
+        "遗留系统现代化"
+      ]
+    },
+    "migration": {
+      "title": "迁移",
+      "description": "将遗留应用程序迁移到现代框架。",
+      "features": [
+        "遗留系统到React迁移",
+        "数据库迁移和优化",
+        "云迁移策略",
+        "性能优化",
+        "安全增强"
+      ]
+    },
+    "cloud": {
+      "title": "云解决方案",
+      "description": "Azure云架构和部署解决方案，用于可扩展的应用程序。",
+      "features": [
+        "Azure应用服务部署",
+        "容器编排",
+        "CI/CD管道设置",
+        "基础设施即代码",
+        "监控和日志记录"
+      ]
+    },
+    "database": {
+      "title": "数据库设计",
+      "description": "高性能应用程序的高效数据库设计和优化。",
+      "features": [
+        "数据库模式设计",
+        "查询优化",
+        "数据建模",
+        "性能调优",
+        "备份和恢复策略"
+      ]
+    },
+    "api": {
+      "title": "API开发",
+      "description": "RESTful和GraphQL API开发，提供全面的文档。",
+      "features": [
+        "RESTful API设计",
+        "GraphQL实现",
+        "API文档",
+        "身份验证和授权",
+        "速率限制和缓存"
+      ]
+    },
+    "getStarted": "开始",
+    "learnMore": "了解更多",
+    "popular": "热门",
+    "approach": {
+      "title": "我的开发方法",
+      "steps": {
+        "discovery": {
+          "title": "发现",
+          "description": "了解您的需求和业务目标"
+        },
+        "planning": {
+          "title": "规划",
+          "description": "架构设计和技术选择"
+        },
+        "development": {
+          "title": "开发",
+          "description": "敏捷开发，定期更新"
+        },
+        "delivery": {
+          "title": "交付",
+          "description": "测试、部署和持续支持"
+        }
+      }
+    }
+  },
+  "resume": {
+    "title": "我的简历",
+    "subtitle": "下载或查看我的专业简历。提供PDF格式，便于查看和打印。",
+    "viewResume": "查看简历",
+    "downloadPDF": "下载PDF",
+    "professionalResume": "专业简历",
+    "quickInfo": "快速信息",
+    "personalInfo": {
+      "name": "Ho Bao Lan",
+      "title": "全栈开发工程师",
+      "location": "越南",
+      "email": "blanho1211@gmail.com",
+      "phone": "+84 (906) 938-322",
+      "website": "作品集网站"
+    },
+    "skills": {
+      "title": "核心技能",
+      "frontend": "前端开发",
+      "backend": "后端开发",
+      "cloud": "云和DevOps",
+      "database": "数据库管理"
+    },
+    "experience": {
+      "title": "专业经验",
+      "years": "3年以上经验",
+      "description": "专门从事.NET和React的全栈开发，专注于可扩展的Web应用程序和云解决方案。"
+    },
+    "education": {
+      "title": "教育和认证",
+      "degree": "计算机科学学士学位",
+      "certifications": "Azure和.NET认证"
+    },
+    "downloadFilename": "何宝兰_简历.pdf",
+    "pdfViewer": {
+      "title": "简历预览",
+      "fullScreen": "全屏",
+      "download": "下载",
+      "cannotDisplay": "无法显示PDF",
+      "browserIssue": "您的浏览器无法显示此PDF。请尝试以下选项之一：",
+      "openInNewTab": "在新标签页中打开",
+      "downloadPDF": "下载PDF"
+    },
+    "troubleshooting": {
+      "title": "PDF显示故障排除",
+      "description": "如果您无法看到上面的PDF：",
+      "solutions": [
+        "点击\"全屏\"或\"在新标签页中打开\"以在浏览器的PDF查看器中查看",
+        "使用\"下载\"按钮保存并在本地打开PDF",
+        "某些浏览器出于安全原因阻止嵌入式PDF - 上面的按钮始终有效",
+        "确保您的浏览器在设置中启用了PDF查看功能"
+      ]
+    }
+  },
+  "footer": {
+    "createdBy": "创建者",
+    "licenseText": "版权所有。此作品集及其内容为Ho Bao Lan的知识产权。未经授权禁止复制或分发。",
+    "builtWith": "技术栈"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功"
+  }
+}
