@@ -415,5 +415,8 @@
     "loading": "Đang tải...",
     "error": "Lỗi",
     "success": "Thành công"
+  },
+  "chatbox": {
+    "welcome": "Xin chào! 👋 Tôi là trợ lý AI tùy chỉnh của Ho Bao Lan. Tôi có hiểu biết đầy đủ về portfolio của họ và cũng có thể giúp bạn với bất kỳ câu hỏi nào - dù là về background của họ, các chủ đề kỹ thuật, lập trình, dịch thuật hay bất cứ điều gì khác!"
   }
 }

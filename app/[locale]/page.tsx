@@ -4,6 +4,7 @@ import Heading from "@/components/home/Heading";
 import Photo from "@/components/home/Photo";
 import QuickStats from "@/components/home/QuickStats";
 import Skill from "@/components/home/Skill";
+import ChatBox from "@/components/ai/ChatBox";
 
 export default function Home() {
     return (
@@ -33,6 +34,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            {/* AI ChatBox */}
+            <ChatBox />
         </section>
     );
 }

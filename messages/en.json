@@ -415,5 +415,8 @@
     "loading": "Loading...",
     "error": "Error",
     "success": "Success"
+  },
+  "chatbox": {
+    "welcome": "Hello! 👋 I'm Ho Bao Lan's custom AI assistant. I have complete knowledge of their portfolio and can also help with any questions you have - whether about their background, technical topics, coding, translations, or anything else!"
   }
 }

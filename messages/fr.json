@@ -415,5 +415,8 @@
     "loading": "Chargement...",
     "error": "Erreur",
     "success": "Succès"
+  },
+  "chatbox": {
+    "welcome": "Bonjour ! 👋 Je suis l'assistant IA personnalisé de Ho Bao Lan. J'ai une connaissance complète de leur portfolio et je peux aussi vous aider avec toutes vos questions - que ce soit sur leur parcours, des sujets techniques, de la programmation, des traductions ou autre chose !"
   }
 }

@@ -7,6 +7,7 @@ import "../globals.css";
 import "../animations.css";
 import Header from "@/components/navbar/Header";
 import Footer from "@/components/footer/Footer";
+import ChatBox from "@/components/ai/ChatBox";
 import Providers from "../providers";
 import PageTransition from "@/components/transition/PageTransition";
 import StairTransititon from "@/components/transition/StairTransititon";
@@ -55,6 +56,7 @@ export default async function LocaleLayout({
                             {children}
                         </PageTransition>
                         <Footer />
+                        <ChatBox />
                     </Providers>
                 </NextIntlClientProvider>
             </body>
