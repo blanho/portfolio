@@ -418,6 +418,13 @@
   },
   "chatbox": {
     "welcome": "您好！👋 我是Ho Bao Lan的定制AI助手。我完全了解他们的作品集，也可以帮助您回答任何问题 - 无论是关于他们的背景、技术话题、编程、翻译还是其他任何问题！",
-    "error": "我遇到了技术困难。请稍后再试！"
+    "error": "我遇到了技术困难。请稍后再试！",
+    "title": "AI助手",
+    "poweredBy": "Hồ Bảo Lân",
+    "placeholder": "问我任何问题...",
+    "typing": "AI正在输入...",
+    "clear": "清除",
+    "send": "发送",
+    "characterCount": "{current}/{max}"
   }
 }

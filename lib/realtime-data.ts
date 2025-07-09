@@ -1,7 +1,7 @@
 // Real-time data utilities for the chatbot
 export interface RealTimeDataSource {
   type: "time" | "weather" | "news" | "crypto" | "stocks";
-  data: any;
+  data: string | number | Record<string, unknown>;
   timestamp: Date;
 }
 
@@ -57,18 +57,17 @@ export function getCurrentDateInfo(language: string = "en"): string {
 }
 
 // Weather API integration (example using OpenWeatherMap)
-export async function getWeatherInfo(
-  city: string = "Ho Chi Minh City"
-): Promise<string> {
+export async function getWeatherInfo(): Promise<string> {
   try {
     // You would need to add your OpenWeatherMap API key here
     // const API_KEY = 'your_openweather_api_key';
+    // const city = "Ho Chi Minh City";
     // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
     // const data = await response.json();
     // return `Weather in ${city}: ${data.main.temp}°C, ${data.weather[0].description}`;
 
     return `Weather API integration available. Add your OpenWeatherMap API key to get live weather data.`;
-  } catch (error) {
+  } catch {
     return `Weather information unavailable at the moment.`;
   }
 }
@@ -88,7 +87,7 @@ export async function getCryptoInfo(coin: string = "bitcoin"): Promise<string> {
       } price: $${price.toLocaleString()}`;
     }
     return `Price information for ${coin} not available.`;
-  } catch (error) {
+  } catch {
     return `Cryptocurrency price information unavailable at the moment.`;
   }
 }
@@ -103,7 +102,7 @@ export async function getNewsInfo(): Promise<string> {
     // return `Latest headlines: ${data.articles.slice(0, 3).map(article => article.title).join(', ')}`;
 
     return `News API integration available. Add your NewsAPI key to get live news updates.`;
-  } catch (error) {
+  } catch {
     return `News information unavailable at the moment.`;
   }
 }

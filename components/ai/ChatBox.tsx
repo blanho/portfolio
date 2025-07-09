@@ -443,10 +443,10 @@ const ChatBox: React.FC<ChatBoxProps> = ({ className = "" }) => {
                         </div>
                         <div>
                             <h3 className="font-semibold text-sm">
-                                AI Assistant
+                                {t('title')}
                             </h3>
                             <p className="text-xs text-blue-100">
-                                Powered by Puter.ai
+                                {t('poweredBy')}
                             </p>
                         </div>
                     </div>
@@ -520,7 +520,7 @@ const ChatBox: React.FC<ChatBoxProps> = ({ className = "" }) => {
                                         <div className="flex items-center gap-2">
                                             <Loader2 className="w-4 h-4 animate-spin text-blue-600" />
                                             <span className="text-sm text-gray-600 dark:text-gray-400">
-                                                AI is typing...
+                                                {t('typing')}
                                             </span>
                                         </div>
                                     </div>
@@ -538,7 +538,7 @@ const ChatBox: React.FC<ChatBoxProps> = ({ className = "" }) => {
                                         value={inputValue}
                                         onChange={handleInputChange}
                                         onKeyDown={handleKeyPress}
-                                        placeholder="Ask me anything..."
+                                        placeholder={t('placeholder')}
                                         disabled={isLoading}
                                         className="resize-none bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 min-h-[40px] max-h-[120px] w-full pr-12 text-sm"
                                         rows={1}
@@ -555,7 +555,7 @@ const ChatBox: React.FC<ChatBoxProps> = ({ className = "" }) => {
                                     />
                                     {inputValue.length > 0 && (
                                         <div className="absolute bottom-1 right-2 text-xs text-gray-400 pointer-events-none bg-gray-50 dark:bg-gray-800 px-1 rounded">
-                                            {inputValue.length}/{MAX_MESSAGE_LENGTH}
+                                            {t('characterCount', { current: inputValue.length, max: MAX_MESSAGE_LENGTH })}
                                         </div>
                                     )}
                                 </div>
@@ -576,11 +576,11 @@ const ChatBox: React.FC<ChatBoxProps> = ({ className = "" }) => {
                                         size="sm"
                                         className="text-xs text-gray-500 hover:text-gray-700"
                                     >
-                                        Clear
+                                        {t('clear')}
                                     </Button>
                                 </div>
                                 <p className="text-xs text-gray-400">
-                                    Powered by Puter.ai
+                                    {t('poweredBy')}
                                 </p>
                             </div>
                         </div>

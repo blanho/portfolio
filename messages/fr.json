@@ -418,6 +418,13 @@
   },
   "chatbox": {
     "welcome": "Bonjour ! 👋 Je suis l'assistant IA personnalisé de Ho Bao Lan. J'ai une connaissance complète de leur portfolio et je peux aussi vous aider avec toutes vos questions - que ce soit sur leur parcours, des sujets techniques, de la programmation, des traductions ou autre chose !",
-    "error": "Je rencontre des difficultés techniques. Veuillez réessayer dans un moment !"
+    "error": "Je rencontre des difficultés techniques. Veuillez réessayer dans un moment !",
+    "title": "Assistant IA",
+    "poweredBy": "Hồ Bảo Lân",
+    "placeholder": "Demandez-moi n'importe quoi...",
+    "typing": "L'IA tape...",
+    "clear": "Effacer",
+    "send": "Envoyer",
+    "characterCount": "{current}/{max}"
   }
 }

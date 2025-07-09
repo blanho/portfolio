@@ -418,6 +418,13 @@
   },
   "chatbox": {
     "welcome": "Hello! 👋 I'm Ho Bao Lan's custom AI assistant. I have complete knowledge of their portfolio and can also help with any questions you have - whether about their background, technical topics, coding, translations, or anything else!",
-    "error": "I'm experiencing technical difficulties. Please try again in a moment!"
+    "error": "I'm experiencing technical difficulties. Please try again in a moment!",
+    "title": "AI Assistant",
+    "poweredBy": "Hồ Bảo Lân",
+    "placeholder": "Ask me anything...",
+    "typing": "AI is typing...",
+    "clear": "Clear",
+    "send": "Send",
+    "characterCount": "{current}/{max}"
   }
 }
