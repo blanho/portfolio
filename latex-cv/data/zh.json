@@ -1,0 +1,99 @@
+{
+  "personal": {
+    "name": "何宝兰",
+    "phone": "+84 987 654 321",
+    "email": "hobaolan@example.com",
+    "linkedin": "https://linkedin.com/in/hobaolan",
+    "linkedin_text": "linkedin.com/in/hobaolan",
+    "github": "https://github.com/hobaolan",
+    "github_text": "github.com/hobaolan",
+    "portfolio": "https://hobaolan.dev",
+    "portfolio_text": "hobaolan.dev"
+  },
+  "sections": {
+    "summary_title": "专业概要",
+    "experience_title": "工作经历",
+    "education_title": "教育背景",
+    "projects_title": "项目经历",
+    "skills_title": "技术技能",
+    "certifications_title": "认证证书",
+    "languages_title": "语言能力"
+  },
+  "summary": "拥有3年以上使用.NET、React和Azure云服务构建可扩展Web应用程序经验的全栈开发人员。在微服务架构、DevOps实践和技术团队领导方面有着良好的记录。热衷于干净的代码、性能优化和提供高质量的解决方案。",
+  "experience": [
+    {
+      "title": "高级全栈开发工程师",
+      "company": "科技公司",
+      "location": "越南胡志明市",
+      "duration": "2022年1月 -- 至今",
+      "responsibilities": [
+        "领导使用.NET Core和Azure Service Bus的微服务架构开发",
+        "使用Azure DevOps实现CI/CD管道，将部署时间缩短60%",
+        "指导初级开发人员并为8人开发团队进行代码审查",
+        "优化数据库查询，应用程序性能提高40%",
+        "与产品经理协作定义技术需求和项目时间表"
+      ]
+    },
+    {
+      "title": "全栈开发工程师",
+      "company": "软件解决方案有限公司",
+      "location": "越南胡志明市",
+      "duration": "2021年6月 -- 2021年12月",
+      "responsibilities": [
+        "使用React、TypeScript和Material-UI开发响应式Web应用程序",
+        "使用.NET Core和Entity Framework构建RESTful API与SQL Server",
+        "使用JWT和OAuth 2.0实现身份验证和授权",
+        "集成第三方支付系统和外部API",
+        "参与敏捷开发流程和每日站会"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "理工大学",
+      "location": "越南胡志明市",
+      "degree": "计算机科学学士",
+      "duration": "2017年9月 -- 2021年6月"
+    }
+  ],
+  "projects": [
+    {
+      "name": "电商平台",
+      "technologies": ".NET Core, React, Azure SQL, Redis",
+      "duration": "2023年3月 -- 至今",
+      "description": [
+        "构建可扩展的电商平台，处理10,000+并发用户",
+        "使用SignalR和Redis实现实时库存管理",
+        "集成支付网关和物流API",
+        "使用Azure Application Insights和监控实现99.9%正常运行时间"
+      ]
+    },
+    {
+      "name": "任务管理系统",
+      "technologies": "React, Node.js, MongoDB, Socket.io",
+      "duration": "2022年1月 -- 2022年2月",
+      "description": [
+        "开发实时协作任务管理应用程序",
+        "使用React DnD实现拖放功能",
+        "使用Socket.io构建实时通知",
+        "使用Docker容器和ECS部署到AWS"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": "C#, JavaScript, TypeScript, Python, SQL, HTML/CSS",
+    "frameworks": ".NET Core, React, Node.js, Express.js, Entity Framework, Bootstrap",
+    "tools": "Visual Studio, VS Code, Git, Docker, Postman, Azure DevOps, JIRA",
+    "cloud": "Azure (App Service, Functions, SQL Database, Service Bus), AWS (EC2, S3, RDS)"
+  },
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate (AZ-204)",
+    "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    "AWS Certified Cloud Practitioner"
+  ],
+  "languages": [
+    "越南语（母语）",
+    "英语（流利 - IELTS 7.5）",
+    "日语（会话级 - N3水平）"
+  ]
+}

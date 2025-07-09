@@ -44,6 +44,9 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale} suppressHydrationWarning>
+            <head>
+                <script src="https://js.puter.com/v2/" async></script>
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
                 suppressHydrationWarning

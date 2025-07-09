@@ -1,0 +1,99 @@
+{
+  "personal": {
+    "name": "Hồ Bảo Lan",
+    "phone": "+84 987 654 321",
+    "email": "hobaolan@example.com",
+    "linkedin": "https://linkedin.com/in/hobaolan",
+    "linkedin_text": "linkedin.com/in/hobaolan",
+    "github": "https://github.com/hobaolan",
+    "github_text": "github.com/hobaolan",
+    "portfolio": "https://hobaolan.dev",
+    "portfolio_text": "hobaolan.dev"
+  },
+  "sections": {
+    "summary_title": "Tóm Tắt Nghề Nghiệp",
+    "experience_title": "Kinh Nghiệm Làm Việc",
+    "education_title": "Học Vấn",
+    "projects_title": "Dự Án",
+    "skills_title": "Kỹ Năng Kỹ Thuật",
+    "certifications_title": "Chứng Chỉ",
+    "languages_title": "Ngôn Ngữ"
+  },
+  "summary": "Lập trình viên Full Stack với hơn 3 năm kinh nghiệm xây dựng các ứng dụng web có khả năng mở rộng sử dụng .NET, React và dịch vụ đám mây Azure. Có thành tích đã được chứng minh trong kiến trúc microservices, thực hành DevOps và dẫn dắt các nhóm kỹ thuật. Đam mê về code sạch, tối ưu hóa hiệu suất và cung cấp các giải pháp chất lượng cao.",
+  "experience": [
+    {
+      "title": "Lập Trình Viên Full Stack Cấp Cao",
+      "company": "Công Ty Công Nghệ",
+      "location": "TP. Hồ Chí Minh, Việt Nam",
+      "duration": "Tháng 1/2022 -- Hiện tại",
+      "responsibilities": [
+        "Dẫn dắt phát triển kiến trúc microservices sử dụng .NET Core và Azure Service Bus",
+        "Triển khai CI/CD pipelines sử dụng Azure DevOps, giảm thời gian deploy 60%",
+        "Hướng dẫn các lập trình viên junior và thực hiện code review cho team 8 người",
+        "Tối ưu hóa database queries dẫn đến cải thiện 40% hiệu suất ứng dụng",
+        "Hợp tác với product managers để định nghĩa yêu cầu kỹ thuật và timeline dự án"
+      ]
+    },
+    {
+      "title": "Lập Trình Viên Full Stack",
+      "company": "Công Ty Giải Pháp Phần Mềm",
+      "location": "TP. Hồ Chí Minh, Việt Nam",
+      "duration": "Tháng 6/2021 -- Tháng 12/2021",
+      "responsibilities": [
+        "Phát triển ứng dụng web responsive sử dụng React, TypeScript và Material-UI",
+        "Xây dựng RESTful APIs sử dụng .NET Core và Entity Framework với SQL Server",
+        "Triển khai authentication và authorization sử dụng JWT và OAuth 2.0",
+        "Tích hợp hệ thống thanh toán bên thứ ba và external APIs",
+        "Tham gia quy trình phát triển Agile và daily standups"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Đại Học Bách Khoa",
+      "location": "TP. Hồ Chí Minh, Việt Nam",
+      "degree": "Cử Nhân Khoa Học Máy Tính",
+      "duration": "Tháng 9/2017 -- Tháng 6/2021"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Nền Tảng Thương Mại Điện Tử",
+      "technologies": ".NET Core, React, Azure SQL, Redis",
+      "duration": "Tháng 3/2023 -- Hiện tại",
+      "description": [
+        "Xây dựng nền tảng thương mại điện tử có khả năng mở rộng xử lý 10k+ người dùng đồng thời",
+        "Triển khai quản lý kho hàng real-time sử dụng SignalR và Redis",
+        "Tích hợp payment gateways và shipping APIs",
+        "Đạt 99.9% uptime sử dụng Azure Application Insights và monitoring"
+      ]
+    },
+    {
+      "name": "Hệ Thống Quản Lý Task",
+      "technologies": "React, Node.js, MongoDB, Socket.io",
+      "duration": "Tháng 1/2022 -- Tháng 2/2022",
+      "description": [
+        "Phát triển ứng dụng quản lý task hợp tác real-time",
+        "Triển khai drag-and-drop functionality sử dụng React DnD",
+        "Xây dựng thông báo real-time sử dụng Socket.io",
+        "Deploy trên AWS sử dụng Docker containers và ECS"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": "C#, JavaScript, TypeScript, Python, SQL, HTML/CSS",
+    "frameworks": ".NET Core, React, Node.js, Express.js, Entity Framework, Bootstrap",
+    "tools": "Visual Studio, VS Code, Git, Docker, Postman, Azure DevOps, JIRA",
+    "cloud": "Azure (App Service, Functions, SQL Database, Service Bus), AWS (EC2, S3, RDS)"
+  },
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate (AZ-204)",
+    "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    "AWS Certified Cloud Practitioner"
+  ],
+  "languages": [
+    "Tiếng Việt (Bản ngữ)",
+    "Tiếng Anh (Thành thạo - IELTS 7.5)",
+    "Tiếng Nhật (Giao tiếp - N3)"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "personal": {
+    "name": "ホ・バオ・ラン",
+    "phone": "+84 987 654 321",
+    "email": "hobaolan@example.com",
+    "linkedin": "https://linkedin.com/in/hobaolan",
+    "linkedin_text": "linkedin.com/in/hobaolan",
+    "github": "https://github.com/hobaolan",
+    "github_text": "github.com/hobaolan",
+    "portfolio": "https://hobaolan.dev",
+    "portfolio_text": "hobaolan.dev"
+  },
+  "sections": {
+    "summary_title": "職歴概要",
+    "experience_title": "職歴",
+    "education_title": "学歴",
+    "projects_title": "プロジェクト",
+    "skills_title": "技術スキル",
+    "certifications_title": "資格",
+    "languages_title": "言語"
+  },
+  "summary": ".NET、React、Azureクラウドサービスを使用してスケーラブルなWebアプリケーションを構築する3年以上の経験を持つフルスタック開発者。マイクロサービスアーキテクチャ、DevOpsプラクティス、技術チームのリーダーシップにおいて実績があります。クリーンコード、パフォーマンス最適化、高品質ソリューションの提供に情熱を持っています。",
+  "experience": [
+    {
+      "title": "シニアフルスタック開発者",
+      "company": "テック企業",
+      "location": "ホーチミン市、ベトナム",
+      "duration": "2022年1月 -- 現在",
+      "responsibilities": [
+        ".NET CoreとAzure Service Busを使用したマイクロサービスアーキテクチャの開発をリード",
+        "Azure DevOpsを使用したCI/CDパイプラインの実装により、デプロイ時間を60%短縮",
+        "8名の開発者チームのジュニア開発者の指導とコードレビューを実施",
+        "データベースクエリの最適化によりアプリケーションパフォーマンスを40%改善",
+        "プロダクトマネージャーと協力して技術要件とプロジェクトタイムラインを定義"
+      ]
+    },
+    {
+      "title": "フルスタック開発者",
+      "company": "ソフトウェアソリューション株式会社",
+      "location": "ホーチミン市、ベトナム",
+      "duration": "2021年6月 -- 2021年12月",
+      "responsibilities": [
+        "React、TypeScript、Material-UIを使用したレスポンシブWebアプリケーションの開発",
+        ".NET CoreとEntity Framework、SQL Serverを使用したRESTful APIの構築",
+        "JWTとOAuth 2.0を使用した認証・認可の実装",
+        "第三者決済システムと外部APIの統合",
+        "アジャイル開発プロセスとデイリースタンドアップへの参加"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "工科大学",
+      "location": "ホーチミン市、ベトナム",
+      "degree": "コンピュータサイエンス学士",
+      "duration": "2017年9月 -- 2021年6月"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Eコマースプラットフォーム",
+      "technologies": ".NET Core, React, Azure SQL, Redis",
+      "duration": "2023年3月 -- 現在",
+      "description": [
+        "10,000人以上の同時ユーザーを処理するスケーラブルなEコマースプラットフォームを構築",
+        "SignalRとRedisを使用したリアルタイム在庫管理システムの実装",
+        "決済ゲートウェイと配送APIの統合",
+        "Azure Application Insightsと監視により99.9%のアップタイムを達成"
+      ]
+    },
+    {
+      "name": "タスク管理システム",
+      "technologies": "React, Node.js, MongoDB, Socket.io",
+      "duration": "2022年1月 -- 2022年2月",
+      "description": [
+        "リアルタイム協調タスク管理アプリケーションの開発",
+        "React DnDを使用したドラッグアンドドロップ機能の実装",
+        "Socket.ioを使用したリアルタイム通知の構築",
+        "DockerコンテナとECSを使用してAWSにデプロイ"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": "C#, JavaScript, TypeScript, Python, SQL, HTML/CSS",
+    "frameworks": ".NET Core, React, Node.js, Express.js, Entity Framework, Bootstrap",
+    "tools": "Visual Studio, VS Code, Git, Docker, Postman, Azure DevOps, JIRA",
+    "cloud": "Azure (App Service, Functions, SQL Database, Service Bus), AWS (EC2, S3, RDS)"
+  },
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate (AZ-204)",
+    "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    "AWS Certified Cloud Practitioner"
+  ],
+  "languages": [
+    "ベトナム語（母語）",
+    "英語（流暢 - IELTS 7.5）",
+    "日本語（会話レベル - N3）"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "personal": {
+    "name": "Ho Bao Lan",
+    "phone": "+84 987 654 321",
+    "email": "hobaolan@example.com",
+    "linkedin": "https://linkedin.com/in/hobaolan",
+    "linkedin_text": "linkedin.com/in/hobaolan",
+    "github": "https://github.com/hobaolan",
+    "github_text": "github.com/hobaolan",
+    "portfolio": "https://hobaolan.dev",
+    "portfolio_text": "hobaolan.dev"
+  },
+  "sections": {
+    "summary_title": "Professional Summary",
+    "experience_title": "Experience",
+    "education_title": "Education",
+    "projects_title": "Projects",
+    "skills_title": "Technical Skills",
+    "certifications_title": "Certifications",
+    "languages_title": "Languages"
+  },
+  "summary": "Full Stack Developer with 3+ years of experience building scalable web applications using .NET, React, and Azure cloud services. Proven track record in microservices architecture, DevOps practices, and leading technical teams. Passionate about clean code, performance optimization, and delivering high-quality solutions.",
+  "experience": [
+    {
+      "title": "Senior Full Stack Developer",
+      "company": "Tech Company",
+      "location": "Ho Chi Minh City, Vietnam",
+      "duration": "Jan 2022 -- Present",
+      "responsibilities": [
+        "Led development of microservices architecture using .NET Core and Azure Service Bus",
+        "Implemented CI/CD pipelines using Azure DevOps, reducing deployment time by 60%",
+        "Mentored junior developers and conducted code reviews for a team of 8 developers",
+        "Optimized database queries resulting in 40% improvement in application performance",
+        "Collaborated with product managers to define technical requirements and project timelines"
+      ]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Software Solutions Inc",
+      "location": "Ho Chi Minh City, Vietnam",
+      "duration": "Jun 2021 -- Dec 2021",
+      "responsibilities": [
+        "Developed responsive web applications using React, TypeScript, and Material-UI",
+        "Built RESTful APIs using .NET Core and Entity Framework with SQL Server",
+        "Implemented authentication and authorization using JWT and OAuth 2.0",
+        "Integrated third-party payment systems and external APIs",
+        "Participated in Agile development processes and daily standups"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "location": "Ho Chi Minh City, Vietnam",
+      "degree": "Bachelor of Science in Computer Science",
+      "duration": "Sep 2017 -- Jun 2021"
+    }
+  ],
+  "projects": [
+    {
+      "name": "E-Commerce Platform",
+      "technologies": ".NET Core, React, Azure SQL, Redis",
+      "duration": "Mar 2023 -- Present",
+      "description": [
+        "Built a scalable e-commerce platform handling 10k+ concurrent users",
+        "Implemented real-time inventory management using SignalR and Redis",
+        "Integrated payment gateways and shipping APIs",
+        "Achieved 99.9% uptime using Azure Application Insights and monitoring"
+      ]
+    },
+    {
+      "name": "Task Management System",
+      "technologies": "React, Node.js, MongoDB, Socket.io",
+      "duration": "Jan 2022 -- Feb 2022",
+      "description": [
+        "Developed real-time collaborative task management application",
+        "Implemented drag-and-drop functionality using React DnD",
+        "Built real-time notifications using Socket.io",
+        "Deployed on AWS using Docker containers and ECS"
+      ]
+    }
+  ],
+  "skills": {
+    "languages": "C#, JavaScript, TypeScript, Python, SQL, HTML/CSS",
+    "frameworks": ".NET Core, React, Node.js, Express.js, Entity Framework, Bootstrap",
+    "tools": "Visual Studio, VS Code, Git, Docker, Postman, Azure DevOps, JIRA",
+    "cloud": "Azure (App Service, Functions, SQL Database, Service Bus), AWS (EC2, S3, RDS)"
+  },
+  "certifications": [
+    "Microsoft Certified: Azure Developer Associate (AZ-204)",
+    "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    "AWS Certified Cloud Practitioner"
+  ],
+  "languages": [
+    "Vietnamese (Native)",
+    "English (Fluent - IELTS 7.5)",
+    "Japanese (Conversational - N3 Level)"
+  ]
+}

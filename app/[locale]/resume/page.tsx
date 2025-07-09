@@ -1,11 +1,33 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
 import { Download, Eye, FileText, Mail, Phone, MapPin, Globe } from 'lucide-react'
 
 const Resume = () => {
     const t = useTranslations('resume')
+    const params = useParams()
+    const locale = params.locale as string
+    const [cvPath, setCvPath] = useState('/api/cv?locale=en')
+    const [downloadPath, setDownloadPath] = useState('/api/cv/download?locale=en')
+
+    useEffect(() => {
+        // Set the CV paths based on current locale
+        setCvPath(`/api/cv?locale=${locale}`)
+        setDownloadPath(`/api/cv/download?locale=${locale}`)
+    }, [locale])
+
+    const handleViewCV = () => {
+        window.open(cvPath, '_blank')
+    }
+
+    const handleDownloadCV = () => {
+        const link = document.createElement('a')
+        link.href = downloadPath
+        link.download = t('downloadFilename')
+        link.click()
+    }
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800 py-12">
@@ -21,19 +43,14 @@ const Resume = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                     <Button
                         className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
-                        onClick={() => window.open('/resume.pdf', '_blank')}
+                        onClick={handleViewCV}
                     >
                         <Eye className="w-5 h-5" />
                         {t('viewResume')}
                     </Button>
                     <Button
                         className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
-                        onClick={() => {
-                            const link = document.createElement('a')
-                            link.href = '/resume.pdf'
-                            link.download = t('downloadFilename')
-                            link.click()
-                        }}
+                        onClick={handleDownloadCV}
                     >
                         <Download className="w-5 h-5" />
                         {t('downloadPDF')}
@@ -106,7 +123,7 @@ const Resume = () => {
                                         <Button
                                             size="sm"
                                             variant="outline"
-                                            onClick={() => window.open('/resume.pdf', '_blank')}
+                                            onClick={handleViewCV}
                                             className="hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer"
                                         >
                                             <Eye className="w-4 h-4 mr-1" />
@@ -114,12 +131,7 @@ const Resume = () => {
                                         </Button>
                                         <Button
                                             size="sm"
-                                            onClick={() => {
-                                                const link = document.createElement('a')
-                                                link.href = '/resume.pdf'
-                                                link.download = t('downloadFilename')
-                                                link.click()
-                                            }}
+                                            onClick={handleDownloadCV}
                                             className="bg-green-600 hover:bg-green-700 text-white cursor-pointer"
                                         >
                                             <Download className="w-4 h-4 mr-1" />
@@ -130,7 +142,7 @@ const Resume = () => {
                             </div>
                             <div className="relative">
                                 <iframe
-                                    src="/resume.pdf#toolbar=1&navpanes=0&scrollbar=1"
+                                    src={`${cvPath}#toolbar=1&navpanes=0&scrollbar=1`}
                                     className="w-full h-[600px] md:h-[800px]"
                                     title="Resume PDF"
                                     style={{ border: 'none' }}
@@ -152,19 +164,14 @@ const Resume = () => {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-3">
                                         <Button
-                                            onClick={() => window.open('/resume.pdf', '_blank')}
+                                            onClick={handleViewCV}
                                             className="bg-blue-600 hover:bg-blue-700 text-white"
                                         >
                                             <Eye className="w-4 h-4 mr-2" />
                                             {t('pdfViewer.openInNewTab')}
                                         </Button>
                                         <Button
-                                            onClick={() => {
-                                                const link = document.createElement('a')
-                                                link.href = '/resume.pdf'
-                                                link.download = t('downloadFilename')
-                                                link.click()
-                                            }}
+                                            onClick={handleDownloadCV}
                                             variant="outline"
                                             className="border-green-600 text-green-600 hover:bg-green-50 dark:border-green-400 dark:text-green-400"
                                         >

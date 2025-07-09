@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puter.ai Test</title>
+</head>
+<body>
+    <h1>Puter.ai Test Page</h1>
+    <button onclick="testPuter()">Test Puter.ai</button>
+    <div id="result"></div>
+
+    <script src="https://js.puter.com/v2/"></script>
+    <script>
+        console.log('Script loaded');
+        
+        function testPuter() {
+            console.log('Testing Puter.ai...');
+            console.log('window.puter:', window.puter);
+            
+            if (window.puter) {
+                console.log('window.puter.ai:', window.puter.ai);
+                if (window.puter.ai) {
+                    console.log('window.puter.ai.chat:', window.puter.ai.chat);
+                    if (window.puter.ai.chat) {
+                        console.log('✅ Puter.ai is fully loaded!');
+                        
+                        // Test a simple chat
+                        window.puter.ai.chat("Hello, tell me about yourself", { model: "gpt-4.1-nano" })
+                            .then(response => {
+                                console.log('✅ Puter.ai response:', response);
+                                document.getElementById('result').innerHTML = '<h3>Success!</h3><p>' + response + '</p>';
+                            })
+                            .catch(error => {
+                                console.error('❌ Puter.ai error:', error);
+                                document.getElementById('result').innerHTML = '<h3>Error!</h3><p>' + error + '</p>';
+                            });
+                    } else {
+                        console.log('❌ window.puter.ai.chat is not available');
+                        document.getElementById('result').innerHTML = '<h3>Error!</h3><p>Puter.ai.chat is not available</p>';
+                    }
+                } else {
+                    console.log('❌ window.puter.ai is not available');
+                    document.getElementById('result').innerHTML = '<h3>Error!</h3><p>Puter.ai is not available</p>';
+                }
+            } else {
+                console.log('❌ window.puter is not available');
+                document.getElementById('result').innerHTML = '<h3>Error!</h3><p>Puter is not available</p>';
+            }
+        }
+
+        // Auto-test after 2 seconds
+        setTimeout(() => {
+            console.log('Auto-testing Puter.ai after 2 seconds...');
+            testPuter();
+        }, 2000);
+    </script>
+</body>
+</html>

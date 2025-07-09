@@ -417,6 +417,7 @@
     "success": "Thành công"
   },
   "chatbox": {
-    "welcome": "Xin chào! 👋 Tôi là trợ lý AI tùy chỉnh của Ho Bao Lan. Tôi có hiểu biết đầy đủ về portfolio của họ và cũng có thể giúp bạn với bất kỳ câu hỏi nào - dù là về background của họ, các chủ đề kỹ thuật, lập trình, dịch thuật hay bất cứ điều gì khác!"
+    "welcome": "Xin chào! 👋 Tôi là trợ lý AI của Ho Bao Lan. Tôi biết rõ về portfolio của Lan và có thể giúp bạn với bất kỳ câu hỏi nào - dù là về background của anh ấy, các chủ đề kỹ thuật, lập trình, dịch thuật hay bất cứ điều gì khác!",
+    "error": "Tôi đang gặp khó khăn kỹ thuật. Vui lòng thử lại trong giây lát!"
   }
 }
