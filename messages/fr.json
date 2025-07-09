@@ -4,6 +4,7 @@
     "contact": "Contact",
     "projects": "Projets",
     "services": "Services",
+    "github-stats": "Stats GitHub",
     "resume": "CV"
   },
   "buttons": {
@@ -426,5 +427,101 @@
     "clear": "Effacer",
     "send": "Envoyer",
     "characterCount": "{current}/{max}"
+  },
+  "github": {
+    "title": "Statistiques GitHub",
+    "subtitle": "Insights en temps réel sur mon activité de codage, l'utilisation des langages et les contributions aux projets",
+    "description": "Insights en temps réel sur mon activité de codage, l'utilisation des langages et les contributions aux projets",
+    "demoMode": "⚠️ Mode Démo: Affichage de données d'exemple en raison des limitations de l'API GitHub",
+    "loading": {
+      "title": "Chargement des statistiques GitHub",
+      "description": "Récupération des dépôts et analyse du code..."
+    },
+    "error": {
+      "title": "Erreur lors du chargement des données",
+      "description": "Échec du chargement des données GitHub. Veuillez réessayer."
+    },
+    "tryAgain": "Réessayer",
+    "usingDemoData": "Utilisation des données de démonstration à des fins de présentation",
+    "sections": {
+      "overview": "Aperçu des dépôts",
+      "summary": "Résumé GitHub et analyses",
+      "languages": "Distribution des langages",
+      "languageDistribution": "Distribution des langages",
+      "languageBreakdown": "Répartition des langages",
+      "recentActivity": "Activité récente",
+      "topRepositories": "Meilleurs dépôts",
+      "topLanguages": "Langages principaux",
+      "skills": "Compétences déduites",
+      "inferredSkills": "Compétences déduites",
+      "techStack": "Stack technologique",
+      "technologyStack": "Stack technologique"
+    },
+    "stats": {
+      "totalRepos": "Dépôts totaux",
+      "repositories": "Dépôts",
+      "recentCommits": "Commits récents",
+      "totalStars": "Étoiles totales",
+      "totalForks": "Forks totaux",
+      "languages": "Langages",
+      "lastUpdated": "Dernière mise à jour",
+      "created": "Créé",
+      "updated": "Mis à jour",
+      "commits": "Commits récents"
+    },
+    "repository": {
+      "viewOnGitHub": "Voir sur GitHub",
+      "stars": "étoiles",
+      "forks": "forks",
+      "language": "Langage",
+      "languages": "Langages",
+      "noDescription": "Aucune description disponible"
+    },
+    "commits": {
+      "by": "par",
+      "viewCommit": "Voir le commit",
+      "noCommits": "Aucun commit récent disponible"
+    },
+    "skills": {
+      "inferredFrom": "Compétences déduites de l'analyse des dépôts",
+      "categories": {
+        "languages": "Langages de programmation",
+        "frameworks": "Frameworks et bibliothèques",
+        "tools": "Outils et plateformes",
+        "databases": "Bases de données",
+        "cloud": "Cloud et DevOps"
+      }
+    },
+    "techStack": {
+      "title": "Stack technologique",
+      "subtitle": "Aperçu complet des technologies et outils",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudDevOps": "Cloud et DevOps",
+      "databases": "Bases de données",
+      "testingQuality": "Tests et qualité",
+      "toolsOthers": "Outils et autres",
+      "frontendDesc": "Développement UI/UX",
+      "backendDesc": "Développement côté serveur",
+      "cloudDevOpsDesc": "Cloud et infrastructure",
+      "databasesDesc": "Stockage et gestion des données",
+      "testingQualityDesc": "Tests et assurance qualité",
+      "toolsOthersDesc": "Outils de développement et utilitaires",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "cloud": "Cloud et DevOps",
+        "databases": "Bases de données",
+        "languages": "Langages",
+        "tools": "Outils et plateformes"
+      }
+    },
+    "charts": {
+      "languageDistribution": "Distribution des langages",
+      "repositoryLanguages": "Langages des dépôts",
+      "topLanguages": "Langages principaux (lignes de code)",
+      "linesOfCode": "Lignes de code",
+      "noData": "Aucune donnée disponible"
+    }
   }
 }

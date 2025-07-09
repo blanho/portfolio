@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
 
     // Portfolio owner's comprehensive information
     const portfolioInfo = `
-PORTFOLIO OWNER: Ho Bao Lan - Full-Stack Developer
+PORTFOLIO OWNER: Hồ Bảo Lân - Full-Stack Developer
 
 PERSONAL INFORMATION:
 - Born: 2000 (Age: 25)
@@ -170,7 +170,7 @@ CURRENT AVAILABILITY:
     }
 
     // Enhanced prompt for natural, conversational AI interaction with streaming support
-    const enhancedPrompt = `You are Ho Bao Lan's friendly AI assistant. Respond naturally and conversationally, as if you're a knowledgeable colleague who knows Ho Bao Lan well.
+    const enhancedPrompt = `You are Hồ Bảo Lân's friendly AI assistant. Respond naturally and conversationally, as if you're a knowledgeable colleague who knows Hồ Bảo Lân well.
 
 ${
   realTimeInfo
@@ -187,14 +187,14 @@ ${conversationContext}
         : ""
     }📝 User's question: "${message}"
 
-🎯 Key information about Ho Bao Lan:
+🎯 Key information about Hồ Bảo Lân:
 ${portfolioInfo}
 
 💡 Response guidelines:
 - Be natural and conversational (like chatting with a friend)
 - Keep responses focused and helpful (50-150 words typically)
 - Match the user's language automatically
-- Show enthusiasm about Ho Bao Lan's expertise when relevant
+- Show enthusiasm about Hồ Bảo Lân's expertise when relevant
 - For comparisons, highlight his unique combination: technical skills + leadership + international experience
 - Always be positive and professional
 - If asked about other topics, help naturally while staying true to your role
@@ -317,30 +317,30 @@ Respond naturally now:`;
         lowerMessage.includes("salut")
       ) {
         if (isVietnamese)
-          return "Chào bạn! Tôi là AI assistant của Ho Bao Lan đây. Tôi có thể kể cho bạn về kinh nghiệm làm việc của Lan, dự án thú vị, hoặc trò chuyện về bất cứ gì bạn muốn biết! Bạn quan tâm đến chủ đề gì?";
+          return "Chào bạn! Tôi là AI assistant của Hồ Bảo Lân đây. Tôi có thể kể cho bạn về kinh nghiệm làm việc của Lân, dự án thú vị, hoặc trò chuyện về bất cứ gì bạn muốn biết! Bạn quan tâm đến chủ đề gì?";
         if (isChinese)
-          return "你好！我是Ho Bao Lan的AI助手。我可以告诉你关于工作经验、有趣的项目，或者聊任何你想了解的话题！你对什么感兴趣？";
+          return "你好！我是Hồ Bảo Lân的AI助手。我可以告诉你关于工作经验、有趣的项目，或者聊任何你想了解的话题！你对什么感兴趣？";
         if (isJapanese)
-          return "こんにちは！Ho Bao LanのAIアシスタントです。仕事の経験、面白いプロジェクト、または何でも知りたいことについてお話しできます！何に興味がありますか？";
+          return "こんにちは！Hồ Bảo LânのAIアシスタントです。仕事の経験、面白いプロジェクト、または何でも知りたいことについてお話しできます！何に興味がありますか？";
         if (isFrench)
-          return "Salut ! Je suis l'assistant IA de Ho Bao Lan. Je peux te parler de l'expérience professionnelle, des projets intéressants, ou discuter de tout ce que tu veux savoir ! Qu'est-ce qui t'intéresse ?";
+          return "Salut ! Je suis l'assistant IA de Hồ Bảo Lân. Je peux te parler de l'expérience professionnelle, des projets intéressants, ou discuter de tout ce que tu veux savoir ! Qu'est-ce qui t'intéresse ?";
         if (isArabic)
-          return "مرحبا! أنا مساعد الذكاء الاصطناعي لـ Ho Bao Lan. يمكنني إخبارك عن الخبرة المهنية، والمشاريع المثيرة، أو الحديث عن أي شيء تريد معرفته! ما الذي يثير اهتمامك؟";
-        return "Hey there! I'm Ho Bao Lan's AI assistant. I can tell you about work experience, cool projects, or chat about anything you'd like to know! What interests you?";
+          return "مرحبا! أنا مساعد الذكاء الاصطناعي لـ Hồ Bảo Lân. يمكنني إخبارك عن الخبرة المهنية، والمشاريع المثيرة، أو الحديث عن أي شيء تريد معرفته! ما الذي يثير اهتمامك؟";
+        return "Hey there! I'm Hồ Bảo Lân's AI assistant. I can tell you about work experience, cool projects, or chat about anything you'd like to know! What interests you?";
       }
 
       // Default natural responses based on language
       if (isVietnamese)
-        return "Tôi sẵn sàng giúp bạn! Bạn có thể hỏi về kinh nghiệm của Lan, lập trình, career advice, hoặc bất cứ gì. Tôi thích trò chuyện! 😊";
+        return "Tôi sẵn sàng giúp bạn! Bạn có thể hỏi về kinh nghiệm của Lân, lập trình, career advice, hoặc bất cứ gì. Tôi thích trò chuyện! 😊";
       if (isChinese)
-        return "我随时为你提供帮助！你可以询问Ho Bao Lan的经验、编程、职业建议，或任何事情。我喜欢聊天！😊";
+        return "我随时为你提供帮助！你可以询问Hồ Bảo Lân的经验、编程、职业建议，或任何事情。我喜欢聊天！😊";
       if (isJapanese)
-        return "いつでもお手伝いします！Ho Bao Lanの経験、プログラミング、キャリアアドバイス、または何でも聞いてください。おしゃべりが好きです！😊";
+        return "いつでもお手伝いします！Hồ Bảo Lânの経験、プログラミング、キャリアアドバイス、または何でも聞いてください。おしゃべりが好きです！😊";
       if (isFrench)
-        return "Je suis là pour t'aider ! Tu peux demander sur l'expérience de Ho Bao Lan, la programmation, des conseils de carrière, ou n'importe quoi. J'aime discuter ! 😊";
+        return "Je suis là pour t'aider ! Tu peux demander sur l'expérience de Hồ Bảo Lân, la programmation, des conseils de carrière, ou n'importe quoi. J'aime discuter ! 😊";
       if (isArabic)
-        return "أنا هنا لمساعدتك! يمكنك السؤال عن خبرة Ho Bao Lan، البرمجة، نصائح المهنة، أو أي شيء. أحب المحادثة! 😊";
-      return "I'm here to help! You can ask about Ho Bao Lan's experience, programming, career advice, or anything really. I love chatting! 😊";
+        return "أنا هنا لمساعدتك! يمكنك السؤال عن خبرة Hồ Bảo Lân، البرمجة، نصائح المهنة، أو أي شيء. أحب المحادثة! 😊";
+      return "I'm here to help! You can ask about Hồ Bảo Lân's experience, programming, career advice, or anything really. I love chatting! 😊";
     };
 
     // Generate intelligent response

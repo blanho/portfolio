@@ -4,6 +4,7 @@
     "contact": "Contact",
     "projects": "Projects",
     "services": "Services",
+    "github-stats": "GitHub Stats",
     "resume": "Resume"
   },
   "buttons": {
@@ -426,5 +427,101 @@
     "clear": "Clear",
     "send": "Send",
     "characterCount": "{current}/{max}"
+  },
+  "github": {
+    "title": "GitHub Statistics",
+    "subtitle": "Real-time insights into my coding activity, language usage, and project contributions",
+    "description": "Real-time insights into my coding activity, language usage, and project contributions",
+    "demoMode": "⚠️ Demo Mode: Showing sample data due to GitHub API limitations",
+    "loading": {
+      "title": "Loading GitHub Statistics",
+      "description": "Fetching repositories and analyzing code..."
+    },
+    "error": {
+      "title": "Error Loading Data",
+      "description": "Failed to load GitHub data. Please try again."
+    },
+    "tryAgain": "Try Again",
+    "usingDemoData": "Using demo data for showcase purposes",
+    "sections": {
+      "overview": "Repository Overview",
+      "summary": "GitHub Summary & Analytics",
+      "languages": "Language Distribution",
+      "languageDistribution": "Language Distribution",
+      "languageBreakdown": "Language Breakdown",
+      "recentActivity": "Recent Activity",
+      "topRepositories": "Top Repositories",
+      "topLanguages": "Top Languages",
+      "skills": "Inferred Skills",
+      "inferredSkills": "Inferred Skills",
+      "techStack": "Technology Stack",
+      "technologyStack": "Technology Stack"
+    },
+    "stats": {
+      "totalRepos": "Total Repositories",
+      "repositories": "Repositories",
+      "recentCommits": "Recent Commits",
+      "totalStars": "Total Stars",
+      "totalForks": "Total Forks",
+      "languages": "Languages",
+      "lastUpdated": "Last Updated",
+      "created": "Created",
+      "updated": "Updated",
+      "commits": "Recent Commits"
+    },
+    "repository": {
+      "viewOnGitHub": "View on GitHub",
+      "stars": "stars",
+      "forks": "forks",
+      "language": "Language",
+      "languages": "Languages",
+      "noDescription": "No description available"
+    },
+    "commits": {
+      "by": "by",
+      "viewCommit": "View Commit",
+      "noCommits": "No recent commits available"
+    },
+    "skills": {
+      "inferredFrom": "Skills inferred from repository analysis",
+      "categories": {
+        "languages": "Programming Languages",
+        "frameworks": "Frameworks & Libraries",
+        "tools": "Tools & Platforms",
+        "databases": "Databases",
+        "cloud": "Cloud & DevOps"
+      }
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "subtitle": "Comprehensive overview of technologies and tools",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudDevOps": "Cloud & DevOps",
+      "databases": "Databases",
+      "testingQuality": "Testing & Quality",
+      "toolsOthers": "Tools & Others",
+      "frontendDesc": "UI/UX Development",
+      "backendDesc": "Server-Side Development",
+      "cloudDevOpsDesc": "Cloud & Infrastructure",
+      "databasesDesc": "Data Storage & Management",
+      "testingQualityDesc": "Testing & Quality Assurance",
+      "toolsOthersDesc": "Development Tools & Utilities",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "cloud": "Cloud & DevOps",
+        "databases": "Databases",
+        "languages": "Languages",
+        "tools": "Tools & Platforms"
+      }
+    },
+    "charts": {
+      "languageDistribution": "Language Distribution",
+      "repositoryLanguages": "Repository Languages",
+      "topLanguages": "Top Languages (Lines of Code)",
+      "linesOfCode": "Lines of Code",
+      "noData": "No data available"
+    }
   }
 }

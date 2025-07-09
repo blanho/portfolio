@@ -4,6 +4,7 @@
     "contact": "お問い合わせ",
     "projects": "プロジェクト",
     "services": "サービス",
+    "github-stats": "GitHub統計",
     "resume": "履歴書"
   },
   "buttons": {
@@ -426,5 +427,101 @@
     "clear": "クリア",
     "send": "送信",
     "characterCount": "{current}/{max}"
+  },
+  "github": {
+    "title": "GitHub統計",
+    "subtitle": "私のコーディング活動、言語使用、プロジェクト貢献に関するリアルタイムインサイト",
+    "description": "私のコーディング活動、言語使用、プロジェクト貢献に関するリアルタイムインサイト",
+    "demoMode": "⚠️ デモモード: GitHub API制限のためサンプルデータを表示",
+    "loading": {
+      "title": "GitHub統計を読み込み中",
+      "description": "リポジトリを取得してコードを分析中..."
+    },
+    "error": {
+      "title": "データ読み込みエラー",
+      "description": "GitHubデータの読み込みに失敗しました。もう一度お試しください。"
+    },
+    "tryAgain": "再試行",
+    "usingDemoData": "デモンストレーション用のデモデータを使用",
+    "sections": {
+      "overview": "リポジトリ概要",
+      "summary": "GitHub概要・分析",
+      "languages": "言語分布",
+      "languageDistribution": "言語分布",
+      "languageBreakdown": "言語内訳",
+      "recentActivity": "最近の活動",
+      "topRepositories": "トップリポジトリ",
+      "topLanguages": "トップ言語",
+      "skills": "推定スキル",
+      "inferredSkills": "推定スキル",
+      "techStack": "技術スタック",
+      "technologyStack": "技術スタック"
+    },
+    "stats": {
+      "totalRepos": "総リポジトリ数",
+      "repositories": "リポジトリ",
+      "recentCommits": "最近のコミット",
+      "totalStars": "総スター数",
+      "totalForks": "総フォーク数",
+      "languages": "言語",
+      "lastUpdated": "最終更新",
+      "created": "作成日",
+      "updated": "更新日",
+      "commits": "最近のコミット"
+    },
+    "repository": {
+      "viewOnGitHub": "GitHubで見る",
+      "stars": "スター",
+      "forks": "フォーク",
+      "language": "言語",
+      "languages": "言語",
+      "noDescription": "説明がありません"
+    },
+    "commits": {
+      "by": "by",
+      "viewCommit": "コミットを見る",
+      "noCommits": "最近のコミットはありません"
+    },
+    "skills": {
+      "inferredFrom": "リポジトリ分析から推定されたスキル",
+      "categories": {
+        "languages": "プログラミング言語",
+        "frameworks": "フレームワーク・ライブラリ",
+        "tools": "ツール・プラットフォーム",
+        "databases": "データベース",
+        "cloud": "クラウド・DevOps"
+      }
+    },
+    "techStack": {
+      "title": "技術スタック",
+      "subtitle": "技術とツールの包括的な概要",
+      "frontend": "フロントエンド",
+      "backend": "バックエンド",
+      "cloudDevOps": "クラウド・DevOps",
+      "databases": "データベース",
+      "testingQuality": "テスト・品質",
+      "toolsOthers": "ツール・その他",
+      "frontendDesc": "UI/UX開発",
+      "backendDesc": "サーバーサイド開発",
+      "cloudDevOpsDesc": "クラウド・インフラ",
+      "databasesDesc": "データストレージ・管理",
+      "testingQualityDesc": "テスト・品質保証",
+      "toolsOthersDesc": "開発ツール・ユーティリティ",
+      "categories": {
+        "frontend": "フロントエンド",
+        "backend": "バックエンド",
+        "cloud": "クラウド・DevOps",
+        "databases": "データベース",
+        "languages": "言語",
+        "tools": "ツール・プラットフォーム"
+      }
+    },
+    "charts": {
+      "languageDistribution": "言語分布",
+      "repositoryLanguages": "リポジトリ言語",
+      "topLanguages": "トップ言語（コード行数）",
+      "linesOfCode": "コード行数",
+      "noData": "データがありません"
+    }
   }
 }

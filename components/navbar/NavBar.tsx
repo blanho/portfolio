@@ -21,7 +21,7 @@ const NavBar = () => {
     const links = [
         { href: `/${currentLocale}`, label: t('home') },
         { href: `/${currentLocale}/resume`, label: t('resume') },
-        { href: `/${currentLocale}/services`, label: t('services') },
+        { href: `/${currentLocale}/github-stats`, label: t('github-stats') },
         { href: `/${currentLocale}/projects`, label: t('projects') },
         { href: `/${currentLocale}/contact`, label: t('contact') },
     ];

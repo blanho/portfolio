@@ -4,6 +4,7 @@
     "contact": "Liên hệ",
     "projects": "Dự án",
     "services": "Dịch vụ",
+    "github-stats": "Thống kê GitHub",
     "resume": "Hồ sơ"
   },
   "buttons": {
@@ -426,5 +427,101 @@
     "clear": "Xóa",
     "send": "Gửi",
     "characterCount": "{current}/{max}"
+  },
+  "github": {
+    "title": "Thống kê GitHub",
+    "subtitle": "Khám phá hành trình coding của tôi qua dữ liệu và thông tin chi tiết",
+    "description": "Khám phá hành trình coding của tôi qua dữ liệu và thông tin chi tiết",
+    "demoMode": "⚠️ Chế độ Demo: Hiển thị dữ liệu mẫu do giới hạn GitHub API",
+    "loading": {
+      "title": "Đang tải thống kê GitHub",
+      "description": "Đang lấy repository và phân tích code..."
+    },
+    "error": {
+      "title": "Lỗi tải dữ liệu",
+      "description": "Không thể tải dữ liệu GitHub. Vui lòng thử lại."
+    },
+    "tryAgain": "Thử lại",
+    "usingDemoData": "Sử dụng dữ liệu demo để trình diễn",
+    "sections": {
+      "overview": "Tổng quan Repository",
+      "summary": "Tóm tắt GitHub và phân tích",
+      "languages": "Phân bố ngôn ngữ",
+      "languageDistribution": "Phân bố ngôn ngữ",
+      "languageBreakdown": "Chi tiết ngôn ngữ",
+      "recentActivity": "Hoạt động gần đây",
+      "topRepositories": "Repository hàng đầu",
+      "topLanguages": "Ngôn ngữ hàng đầu",
+      "skills": "Kỹ năng suy luận",
+      "inferredSkills": "Kỹ năng suy luận",
+      "techStack": "Công nghệ sử dụng",
+      "technologyStack": "Công nghệ sử dụng"
+    },
+    "stats": {
+      "totalRepos": "Tổng số Repository",
+      "repositories": "Repository",
+      "recentCommits": "Commit gần đây",
+      "totalStars": "Tổng số Star",
+      "totalForks": "Tổng số Fork",
+      "languages": "Ngôn ngữ",
+      "lastUpdated": "Cập nhật lần cuối",
+      "created": "Tạo",
+      "updated": "Cập nhật",
+      "commits": "Commit gần đây"
+    },
+    "repository": {
+      "viewOnGitHub": "Xem trên GitHub",
+      "stars": "star",
+      "forks": "fork",
+      "language": "Ngôn ngữ",
+      "languages": "Ngôn ngữ",
+      "noDescription": "Không có mô tả"
+    },
+    "commits": {
+      "by": "bởi",
+      "viewCommit": "Xem Commit",
+      "noCommits": "Không có commit gần đây"
+    },
+    "skills": {
+      "inferredFrom": "Kỹ năng suy luận từ phân tích repository",
+      "categories": {
+        "languages": "Ngôn ngữ lập trình",
+        "frameworks": "Framework và thư viện",
+        "tools": "Công cụ và nền tảng",
+        "databases": "Cơ sở dữ liệu",
+        "cloud": "Cloud và DevOps"
+      }
+    },
+    "techStack": {
+      "title": "Công nghệ sử dụng",
+      "subtitle": "Tổng quan toàn diện về công nghệ và công cụ",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloudDevOps": "Cloud và DevOps",
+      "databases": "Cơ sở dữ liệu",
+      "testingQuality": "Testing và chất lượng",
+      "toolsOthers": "Công cụ và khác",
+      "frontendDesc": "Phát triển UI/UX",
+      "backendDesc": "Phát triển server-side",
+      "cloudDevOpsDesc": "Cloud và hạ tầng",
+      "databasesDesc": "Lưu trữ và quản lý dữ liệu",
+      "testingQualityDesc": "Testing và đảm bảo chất lượng",
+      "toolsOthersDesc": "Công cụ phát triển và tiện ích",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "cloud": "Cloud và DevOps",
+        "databases": "Cơ sở dữ liệu",
+        "languages": "Ngôn ngữ",
+        "tools": "Công cụ và nền tảng"
+      }
+    },
+    "charts": {
+      "languageDistribution": "Phân bố ngôn ngữ",
+      "repositoryLanguages": "Ngôn ngữ Repository",
+      "topLanguages": "Ngôn ngữ hàng đầu (dòng code)",
+      "linesOfCode": "Dòng code",
+      "noData": "Không có dữ liệu"
+    }
   }
 }

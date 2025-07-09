@@ -143,3 +143,19 @@
 .bg-gradient-radial {
   background-image: radial-gradient(circle, var(--tw-gradient-stops));
 }
+
+/* Chatbox entrance animation */
+@keyframes slideInFromBottomRight {
+  0% {
+    transform: translateX(20px) translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.chatbox-entrance {
+  animation: slideInFromBottomRight 0.5s ease-out;
+}
